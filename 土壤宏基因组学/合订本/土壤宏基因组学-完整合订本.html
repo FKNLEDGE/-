@@ -53,7 +53,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
   <h1>🦠 土壤宏基因组学</h1>
   <div class="sub">小白系统学习库 · 完整合订本</div>
   <div class="sub">第一性原理 · 20 个必学模型 · 7 个思维框架 · 10 个案例 · 实操教程 · 难点图解 · 前沿与多组学</div>
-  <div class="sub" style="margin-top:18px;font-size:.9em;">共 55 章 · 自动合并生成 · 用浏览器「打印 → 另存为 PDF」即得电子书</div>
+  <div class="sub" style="margin-top:18px;font-size:.9em;">共 56 章 · 自动合并生成 · 用浏览器「打印 → 另存为 PDF」即得电子书</div>
 </div>
 <div class="tocbox"><h2 style="margin-top:0;border:none;">📑 目录</h2>
 <ul class='toc'><li><a href="#chap-1"><b>🦠 土壤宏基因组学 · 小白系统学习库</b></a>
@@ -620,6 +620,14 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#五怎么自己继续找授人以渔">五、怎么自己继续找（授人以渔）</a></li>
 <li><a href="#三条纪律再强调">⚠️ 三条纪律（再强调）</a></li>
 </ul>
+</li>
+<li><a href="#chap-56"><b>15.7 · 实战工具包 与 各候选数据集的具体用法</b></a>
+<ul>
+<li><a href="#一工具包里有什么">一、工具包里有什么</a></li>
+<li><a href="#二按候选数据集对号入座核实编号后">二、按候选数据集对号入座（核实编号后）</a></li>
+<li><a href="#三一张选哪条路的决策图">三、一张&quot;选哪条路&quot;的决策图</a></li>
+<li><a href="#四最后再念一遍纪律这套工具会替你提醒但你要懂为什么">四、最后再念一遍纪律（这套工具会替你提醒，但你要懂为什么）</a></li>
+</ul>
 </li></ul>
 </div>
 <section class="chapter" id="chap-1">
@@ -634,7 +642,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li>用正确的"思维框架"去判断一个结论靠不靠谱。</li>
 </ul>
 <blockquote>
-<p>📖 <strong>想离线 / 打印通读？</strong> 整本电子书（PDF 250 页 / HTML / Markdown）已生成在 <strong><code>合订本/</code></strong>。</p>
+<p>📖 <strong>想离线 / 打印通读？</strong> 整本电子书（PDF 255 页 / HTML / Markdown）已生成在 <strong><code>合订本/</code></strong>。</p>
 </blockquote>
 <hr />
 <h2 id="学习路线图建议顺序">🗺️ 学习路线图（建议顺序）</h2>
@@ -7846,6 +7854,10 @@ CUE              高                                  低
 <td><strong><code>06-候选公开数据集线索.md</code></strong> ⭐</td>
 <td><strong>现成线索</strong>：农田施肥/养分循环/固碳方向的候选数据集(带 PRJNA 编号)、大型资源(NEON/MGnify)、可做 Meta 的金矿论文 + 核实方法</td>
 </tr>
+<tr>
+<td><strong><code>07-实战工具包与各数据集用法.md</code></strong> ⭐</td>
+<td><strong>可运行工具包</strong>：下载/再分析/单拷贝标准化/批次自查/metafor 脚本 + 提取表模板，并对应各候选数据集的具体打法</td>
+</tr>
 </tbody>
 </table>
 <hr />
@@ -8717,5 +8729,94 @@ forest(res); funnel(res)                            # 森林图 / 漏斗图
 <li><strong>务必引用数据创造者与原始论文</strong>（学术伦理，<strong>15 模块红线</strong>）。</li>
 </ol>
 <p>⬅️ 回到 <strong>模块15总览</strong> ｜ 怎么提取/合成指标 <strong>15.5</strong></p>
+</section><section class="chapter" id="chap-56">
+<h1 id="157-实战工具包-与-各候选数据集的具体用法">15.7 · 实战工具包 与 各候选数据集的具体用法</h1>
+<blockquote>
+<p>你说"全部"——所以我把前面所有方法，落成了一套<strong>可直接运行的脚本和模板</strong>（在 <strong><code>工具包/</code></strong>），并给出<strong>针对 </strong>15.6<strong> 各候选数据集的具体打法</strong>。核实编号后即可开跑。</p>
+</blockquote>
+<hr />
+<h2 id="一工具包里有什么">一、工具包里有什么</h2>
+<table>
+<thead>
+<tr>
+<th>文件</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="./工具包/数据提取表模板.csv"><code>工具包/数据提取表模板.csv</code></a></td>
+<td>Meta 分析逐篇提取数据（含字段说明 + 示例行）</td>
+</tr>
+<tr>
+<td><a href="./工具包/01_download_sra.sh"><code>工具包/01_download_sra.sh</code></a></td>
+<td>批量下载 SRA/ENA 原始 reads</td>
+</tr>
+<tr>
+<td><a href="./工具包/02_reanalysis_pipeline.sh"><code>工具包/02_reanalysis_pipeline.sh</code></a></td>
+<td>多研究统一再分析骨架（质控→物种→功能基因）</td>
+</tr>
+<tr>
+<td><a href="./工具包/04_normalize_single_copy.py"><code>工具包/04_normalize_single_copy.py</code></a></td>
+<td>功能基因→每基因组拷贝数（跨研究可比）</td>
+</tr>
+<tr>
+<td><a href="./工具包/05_batch_check.R"><code>工具包/05_batch_check.R</code></a></td>
+<td>批次效应自查（PCoA+PERMANOVA）+ 组成型差异</td>
+</tr>
+<tr>
+<td><a href="./工具包/03_meta_analysis.R"><code>工具包/03_meta_analysis.R</code></a></td>
+<td>Meta 分析（lnRR+随机效应+调节因子+出图）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>完整用法、环境安装见 <strong><code>工具包/README.md</code></strong>。</p>
+</blockquote>
+<hr />
+<h2 id="二按候选数据集对号入座核实编号后">二、按候选数据集对号入座（核实编号后）</h2>
+<blockquote>
+<p>下面把 <strong>15.6</strong> 的候选，对应到该用工具包的哪条路径。<strong>务必先在 SRA/ENA 核实测序类型与样本/处理/元数据。</strong></p>
+</blockquote>
+<h3 id="prjna607213玉米根际化肥-vs-堆肥粪鸟枪-做机制功能">🅰 PRJNA607213（玉米根际，化肥 vs 堆肥粪，鸟枪）— 做"机制/功能"</h3>
+<p>最适合"化肥 vs 有机肥对 C/N/P 循环基因"的<strong>数据级再分析</strong>：</p>
+<pre><code>1) 核实 → 把各 SRR 填 accessions.txt，各处理记入 元数据.tsv(treatment: CK/NPK60/NPK120/manure4/manure8)
+2) 01_download_sra.sh 下载 → 02_reanalysis_pipeline.sh 统一重算
+   (功能库 FUNC_DB 用 NCyc/PCyc/CAZy，对应 14.1 的 N/P/C 基因)
+3) 04_normalize_single_copy.py 标准化 → 05_batch_check.R 查批次+处理效应
+4) 比较各处理的 nifH/amoA/nirK/nirS/nosZ、gcd/phoD、CAZy 丰度差异
+</code></pre>
+<blockquote>
+<p>它单研究内部就含处理与对照，<strong>研究内对比天然抵消批次</strong>，很适合上手。</p>
+</blockquote>
+<h3 id="prjna853454黄土高原-36-年长期pn粪肥体系-做长期固碳">🅱 PRJNA853454（黄土高原 36 年长期，P/N/粪肥×体系）— 做"长期固碳"</h3>
+<p>若核实为宏基因组，是研究<strong>长期施肥固碳</strong>的好数据（年限是固碳关键，14.4）：</p>
+<pre><code>同上流程；额外把 元数据.tsv 里加入 体系(crop)、年限、初始SOC 等，
+分析时按体系/地力做分层(呼应 14.6 调节因子)。
+</code></pre>
+<h3 id="prjna1166725秸秆粪肥碳循环-做有机物添加碳">🅲 PRJNA1166725（秸秆/粪肥碳循环）— 做"有机物添加×碳"</h3>
+<p>重点看 CAZy、碳降解/固碳基因，结合 14.3 激发效应、14.5 化学计量解读。</p>
+<h3 id="neon-mgnify-农业土壤-做全球跨体系">🅳 NEON + MGnify 农业土壤 — 做"全球/跨体系"</h3>
+<p>样本多、跨站点：优先<strong>用 MGnify 已分析结果</strong>省算力；或下子集统一重算。务必 <code>05_batch_check.R</code> 控站点/研究批次，按气候/土壤分层(14.6)。</p>
+<h3 id="走-meta-路线不下序列-用金矿论文">🅴 走 Meta 路线（不下序列）— 用金矿论文</h3>
+<p>选 <strong>15.6</strong> 的 Meta 金矿论文（如氮肥×氮循环基因 47 研究），把其补充数据填入 <code>数据提取表模板.csv</code>，跑 <code>03_meta_analysis.R</code>，再补近 2 年新研究 = 更新版 Meta。</p>
+<hr />
+<h2 id="三一张选哪条路的决策图">三、一张"选哪条路"的决策图</h2>
+<pre><code>有算力 + 想要功能机制? ──是──► 数据级再分析(A/B/C): 01→02→04→05  (鸟枪数据)
+        │否
+想要全球/跨体系普适规律? ──是──► NEON/MGnify(D) + 控批次分层
+        │否
+想快出结论/算力有限? ──────────► 结果级 Meta(E): 数据提取表 + 03_meta_analysis.R
+</code></pre>
+<hr />
+<h2 id="四最后再念一遍纪律这套工具会替你提醒但你要懂为什么">四、最后再念一遍纪律（这套工具会替你提醒，但你要懂为什么）</h2>
+<ol>
+<li><strong>核实</strong>编号与测序类型（鸟枪≠扩增子，模型2）。</li>
+<li><strong>统一</strong>流程/版本/库；<strong>查批次</strong>（05 脚本），按研究聚类=批次严重（15.3，框架6）。</li>
+<li><strong>单位</strong>：Meta 用 lnRR、再分析用单拷贝标准化、组成型用 CLR（15.5，模型14）。</li>
+<li><strong>潜力≠速率</strong>：功能基因结论别越界（框架3）。</li>
+<li><strong>引用</strong>数据创造者与原始论文。</li>
+</ol>
+<p>⬅️ 回到 <strong>模块15总览</strong> ｜ <strong>知识库总览</strong></p>
 </section>
 </div></body></html>
