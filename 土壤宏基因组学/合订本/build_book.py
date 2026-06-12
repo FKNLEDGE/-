@@ -19,6 +19,7 @@ ROOT = os.path.dirname(HERE)                            # .../土壤宏基因组
 # 阅读顺序（每个文件夹的 README 在前）
 FILES = [
     "README.md",
+    "思路地图-灵魂导览.md",
     "00-零基础启蒙.md",
     "01-第一性原理.md",
     "02-必学模型/README.md",
