@@ -53,7 +53,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
   <h1>🦠 土壤宏基因组学</h1>
   <div class="sub">小白系统学习库 · 完整合订本</div>
   <div class="sub">第一性原理 · 20 个必学模型 · 7 个思维框架 · 10 个案例 · 实操教程 · 难点图解 · 前沿与多组学</div>
-  <div class="sub" style="margin-top:18px;font-size:.9em;">共 54 章 · 自动合并生成 · 用浏览器「打印 → 另存为 PDF」即得电子书</div>
+  <div class="sub" style="margin-top:18px;font-size:.9em;">共 55 章 · 自动合并生成 · 用浏览器「打印 → 另存为 PDF」即得电子书</div>
 </div>
 <div class="tocbox"><h2 style="margin-top:0;border:none;">📑 目录</h2>
 <ul class='toc'><li><a href="#chap-1"><b>🦠 土壤宏基因组学 · 小白系统学习库</b></a>
@@ -610,6 +610,16 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#本篇要点">📌 本篇要点</a></li>
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
+</li>
+<li><a href="#chap-55"><b>15.6 · 候选公开数据集线索（农田·施肥·养分循环·固碳）</b></a>
+<ul>
+<li><a href="#一可下载再分析的原始数据集层次2见153">一、可下载再分析的原始数据集（层次2，见15.3）</a></li>
+<li><a href="#二可整合的大型资源层次23做全球跨体系">二、可整合的大型资源（层次2/3，做全球/跨体系）</a></li>
+<li><a href="#三做-meta-分析的数据金矿论文层次1见152155">三、做 Meta 分析的&quot;数据金矿&quot;论文（层次1，见15.2/15.5）</a></li>
+<li><a href="#四从这份清单到一个项目的建议路径">四、从这份清单到一个项目的建议路径</a></li>
+<li><a href="#五怎么自己继续找授人以渔">五、怎么自己继续找（授人以渔）</a></li>
+<li><a href="#三条纪律再强调">⚠️ 三条纪律（再强调）</a></li>
+</ul>
 </li></ul>
 </div>
 <section class="chapter" id="chap-1">
@@ -624,7 +634,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li>用正确的"思维框架"去判断一个结论靠不靠谱。</li>
 </ul>
 <blockquote>
-<p>📖 <strong>想离线 / 打印通读？</strong> 整本电子书（PDF 244 页 / HTML / Markdown）已生成在 <strong><code>合订本/</code></strong>。</p>
+<p>📖 <strong>想离线 / 打印通读？</strong> 整本电子书（PDF 250 页 / HTML / Markdown）已生成在 <strong><code>合订本/</code></strong>。</p>
 </blockquote>
 <hr />
 <h2 id="学习路线图建议顺序">🗺️ 学习路线图（建议顺序）</h2>
@@ -7832,6 +7842,10 @@ CUE              高                                  低
 <td><strong><code>05-宏基因组指标的提取与Meta实例.md</code></strong> ⭐</td>
 <td><strong>带真实数字的算例</strong>：功能基因丰度的单位与标准化、lnRR 跨单位合并、完整 Meta + 调节因子 + 再分析标准化实例</td>
 </tr>
+<tr>
+<td><strong><code>06-候选公开数据集线索.md</code></strong> ⭐</td>
+<td><strong>现成线索</strong>：农田施肥/养分循环/固碳方向的候选数据集(带 PRJNA 编号)、大型资源(NEON/MGnify)、可做 Meta 的金矿论文 + 核实方法</td>
+</tr>
 </tbody>
 </table>
 <hr />
@@ -8545,5 +8559,163 @@ forest(res); funnel(res)                            # 森林图 / 漏斗图
 <li>宏基因组基因丰度标准化方法比较 · https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5910605/</li>
 </ul>
 <p>⬅️ 回到 <strong>模块15总览</strong> ｜ 复习 Meta 方法 <strong>15.2</strong> ｜ 原始数据再分析 <strong>15.3</strong></p>
+</section><section class="chapter" id="chap-55">
+<h1 id="156-候选公开数据集线索农田施肥养分循环固碳">15.6 · 候选公开数据集线索（农田·施肥·养分循环·固碳）</h1>
+<blockquote>
+<p>这是为你的方向（<strong>农田土壤 · 施肥/有机物 · 养分循环 · 固碳增产</strong>）整理的<strong>起步线索清单</strong>：可下载再分析的原始数据集、可整合的大资源、以及可做 Meta 分析的"数据金矿"论文。</p>
+<p>⚠️ <strong>使用前必读（重要）</strong>：下面的编号/信息来自公开检索整理，<strong>可能有转述误差、或部分其实是扩增子(16S/ITS)而非鸟枪宏基因组</strong>。<strong>每一个都必须你亲自去官网核实</strong>：
+- 在 NCBI 搜编号：<code>https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA xxxxxx</code>
+- 或 ENA：<code>https://www.ebi.ac.uk/ena/browser/view/PRJNAxxxxxx</code>
+- <strong>核实三件事</strong>：① 是鸟枪宏基因组还是扩增子？② 有几个样本、什么处理？③ 元数据（处理、pH、SOC…）齐不齐（<strong>元数据是头号坑，15.1</strong>）。</p>
+</blockquote>
+<hr />
+<h2 id="一可下载再分析的原始数据集层次2见153">一、可下载再分析的原始数据集（层次2，<strong>见15.3</strong>）</h2>
+<table>
+<thead>
+<tr>
+<th>候选编号</th>
+<th>内容（据文献）</th>
+<th>与你方向的契合点</th>
+<th>必核实</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PRJNA607213</strong></td>
+<td>玉米根际<strong>鸟枪宏基因组</strong>；处理含 对照 / 60、120 kg·ha⁻¹ NPK / 4、8 t·ha⁻¹ 堆肥粪</td>
+<td><strong>化肥 vs 有机肥 × C/N/P 循环基因</strong>（多篇论文都用了它）</td>
+<td>样本数、深度</td>
+</tr>
+<tr>
+<td><strong>PRJNA853454</strong></td>
+<td>黄土高原<strong>36 年长期试验</strong>，P/N/粪肥 × 三种种植体系（苜蓿/冬小麦/轮作）；Kong 等 2023</td>
+<td><strong>长期施肥 + 体系对比</strong>，很贴合</td>
+<td>是宏基因组还是扩增子？</td>
+</tr>
+<tr>
+<td><strong>PRJNA1166725</strong></td>
+<td>近期秸秆/粪肥与碳循环基因研究</td>
+<td><strong>秸秆/有机物 × 碳循环</strong></td>
+<td>测序类型、处理</td>
+</tr>
+<tr>
+<td><strong>PRJNA838988 / PRJNA839049</strong></td>
+<td>东北风沙土长期施肥（分别对应细菌/真菌）</td>
+<td>长期施肥；<strong>但"细菌/真菌"提示很可能是扩增子</strong></td>
+<td>极可能是 16S/ITS，慎用</td>
+</tr>
+<tr>
+<td><strong>PRJNA1252672</strong></td>
+<td>小麦不同肥料微生物组</td>
+<td>施肥×小麦</td>
+<td>可能是扩增子</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>上表里 <strong>PRJNA607213（化肥vs粪肥，明确鸟枪）</strong> 和 <strong>PRJNA853454（36年长期）</strong> 是最值得优先核实、最贴合"农田施肥×养分循环"的两个。</p>
+</blockquote>
+<hr />
+<h2 id="二可整合的大型资源层次23做全球跨体系">二、可整合的大型资源（层次2/3，做全球/跨体系）</h2>
+<table>
+<thead>
+<tr>
+<th>资源</th>
+<th>是什么</th>
+<th>怎么用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>NEON 土壤宏基因组</strong></td>
+<td>美国 ~47 站点、近十年的<strong>最大土壤鸟枪宏基因组</strong>之一（经 ENA/MGnify 公开）</td>
+<td>做跨站点/跨梯度、把你的数据放进大背景；含农业用地</td>
+</tr>
+<tr>
+<td><strong>MGnify 农业土壤</strong></td>
+<td>MGnify 收录约 <strong>1120 个农业土壤样本</strong>，且<strong>已统一分析好</strong></td>
+<td>直接拿分析结果做比较，省算力（<strong>15.1</strong>）</td>
+</tr>
+<tr>
+<td><strong>Broadbalk / 洛桑长期试验</strong></td>
+<td>约 180 年的经典长期施肥试验（FYM 粪肥 / NPK / 不施），有宏基因组研究</td>
+<td>长期施肥固碳的"标杆背景"</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>NEON + MGnify 是做"全球/跨体系普适规律"（<strong>14.6</strong>）的现成弹药库。</p>
+</blockquote>
+<hr />
+<h2 id="三做-meta-分析的数据金矿论文层次1见152155">三、做 Meta 分析的"数据金矿"论文（层次1，<strong>见15.2/15.5</strong>）</h2>
+<p><strong>这些已发表的 Meta 分析，其补充材料里就是整理好的、可直接提取的效应数据</strong>（均值/SD/n 或已算好的效应量）——做你自己的 Meta 时，可在它们基础上扩展或复用：</p>
+<table>
+<thead>
+<tr>
+<th>主题</th>
+<th>规模</th>
+<th>出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>氮肥 × 氮循环基因</strong>(nifH/amoA/nirK/nirS/nosZ)</td>
+<td>47 个田间研究</td>
+<td>Soil Biol. Biochem. 2018 · https://www.sciencedirect.com/science/article/abs/pii/S0038071718302864</td>
+</tr>
+<tr>
+<td><strong>有机添加 × 氮循环基因</strong></td>
+<td>124 组观测</td>
+<td>Sci. Total Environ. 2024 · https://www.sciencedirect.com/science/article/abs/pii/S0048969724011872</td>
+</tr>
+<tr>
+<td><strong>多样化种植 × 氮循环基因</strong></td>
+<td>189 组观测</td>
+<td>https://pubmed.ncbi.nlm.nih.gov/35691356/</td>
+</tr>
+<tr>
+<td><strong>气候/土壤 × 氮循环基因</strong></td>
+<td>119 篇文章</td>
+<td>Plant Soil 2022 · https://link.springer.com/article/10.1007/s11104-022-05420-6</td>
+</tr>
+<tr>
+<td><strong>农田施肥 × 土壤有机碳(SOC)</strong></td>
+<td>全球</td>
+<td>Sci. Rep. 2016 · https://www.nature.com/articles/srep27199</td>
+</tr>
+<tr>
+<td><strong>农田管理 × 溶解性有机碳/CO₂/产量</strong></td>
+<td>3539 对 DOC、1424 对产量</td>
+<td>Agric. Ecosyst. Environ. 2024 · https://www.sciencedirect.com/science/article/abs/pii/S0167880924001981</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>最省力的起步</strong>：选其中 1–2 篇与你问题最贴的 Meta，下载它的<strong>补充表格</strong>，按 <strong>15.5 的算例</strong>复算、再补充近 2 年的新研究——一个"更新版 Meta"就成形了。</p>
+</blockquote>
+<hr />
+<h2 id="四从这份清单到一个项目的建议路径">四、从这份清单到一个项目的建议路径</h2>
+<pre><code>想快速出成果(低算力) ──► 走层次1 Meta：选三类金矿论文之一，复用+扩展补充数据(15.2/15.5)
+想做机制/功能(有算力)──► 核实 PRJNA607213 / PRJNA853454 → 下载 → 统一重算功能基因(15.3/15.5)
+想做全球/跨体系 ──────► NEON + MGnify 农业土壤 + 你自己的数据(15.3/15.4/14.6)
+        │
+   全程：核实测序类型与元数据(15.1) + 控批次(15.3) + 用lnRR/单拷贝标准化(15.5) + 引用来源
+</code></pre>
+<hr />
+<h2 id="五怎么自己继续找授人以渔">五、怎么自己继续找（授人以渔）</h2>
+<ol>
+<li><strong>顺藤摸瓜</strong>：找一篇你最认可的论文 → 看文末 "Data availability" 的 PRJNA 号 → 去 SRA/ENA 下；再看它<strong>引用了谁、被谁引用</strong>，串出一批同类数据。</li>
+<li><strong>库内检索</strong>：在 <strong>SRA/ENA</strong> 用 <code>soil metagenome fertilization</code>、在 <strong>MGnify</strong> 按 <code>soil/agricultural</code> 生境筛。</li>
+<li><strong>关键词组合</strong>：<code>soil metagenome + (long-term fertilization / manure / straw / biochar) + (carbon/nitrogen cycling) + data availability</code>。</li>
+<li><strong>认准长期定位试验</strong>：固碳要看长期效应，优先找年限长的试验数据（<strong>14.4</strong>）。</li>
+</ol>
+<hr />
+<h2 id="三条纪律再强调">⚠️ 三条纪律（再强调）</h2>
+<ol>
+<li><strong>每个编号都去官网核实</strong>测序类型/样本/元数据，别凭本清单直接开干。</li>
+<li><strong>区分鸟枪宏基因组 vs 扩增子</strong>——能回答的问题不同（<strong>模型2</strong>）。</li>
+<li><strong>务必引用数据创造者与原始论文</strong>（学术伦理，<strong>15 模块红线</strong>）。</li>
+</ol>
+<p>⬅️ 回到 <strong>模块15总览</strong> ｜ 怎么提取/合成指标 <strong>15.5</strong></p>
 </section>
 </div></body></html>
