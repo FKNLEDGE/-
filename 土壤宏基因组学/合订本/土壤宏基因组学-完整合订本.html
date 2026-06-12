@@ -53,7 +53,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
   <h1>🦠 土壤宏基因组学</h1>
   <div class="sub">小白系统学习库 · 完整合订本</div>
   <div class="sub">第一性原理 · 20 个必学模型 · 7 个思维框架 · 10 个案例 · 实操教程 · 难点图解 · 前沿与多组学</div>
-  <div class="sub" style="margin-top:18px;font-size:.9em;">共 53 章 · 自动合并生成 · 用浏览器「打印 → 另存为 PDF」即得电子书</div>
+  <div class="sub" style="margin-top:18px;font-size:.9em;">共 54 章 · 自动合并生成 · 用浏览器「打印 → 另存为 PDF」即得电子书</div>
 </div>
 <div class="tocbox"><h2 style="margin-top:0;border:none;">📑 目录</h2>
 <ul class='toc'><li><a href="#chap-1"><b>🦠 土壤宏基因组学 · 小白系统学习库</b></a>
@@ -598,6 +598,18 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#本篇要点">📌 本篇要点</a></li>
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
+</li>
+<li><a href="#chap-54"><b>15.5 · 宏基因组指标的提取与 Meta 实例（带数字走一遍）</b></a>
+<ul>
+<li><a href="#一先搞清能拿来做-meta-整合的宏基因组指标有哪些">一、先搞清：能拿来做 Meta / 整合的&quot;宏基因组指标&quot;有哪些</a></li>
+<li><a href="#二关键难点宏基因组指标的单位五花八门必须先统一理解">二、关键难点：宏基因组指标的&quot;单位&quot;五花八门（必须先统一理解）</a></li>
+<li><a href="#三算例-a一个完整的-meta-分析nosz-对有机肥的响应">三、算例 A：一个完整的 Meta 分析（nosZ 对有机肥的响应）</a></li>
+<li><a href="#四算例-b调节因子分析为什么看体系很重要">四、算例 B：调节因子分析（为什么&quot;看体系&quot;很重要）</a></li>
+<li><a href="#五算例-c原始数据再分析里指标怎么标准化出来">五、算例 C：原始数据再分析里，指标怎么&quot;标准化&quot;出来</a></li>
+<li><a href="#六宏基因组指标做-meta整合的专属坑清单">六、宏基因组指标做 Meta/整合的&quot;专属坑&quot;清单 ⚠️</a></li>
+<li><a href="#本篇要点">📌 本篇要点</a></li>
+<li><a href="#延伸阅读">📚 延伸阅读</a></li>
+</ul>
 </li></ul>
 </div>
 <section class="chapter" id="chap-1">
@@ -612,7 +624,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li>用正确的"思维框架"去判断一个结论靠不靠谱。</li>
 </ul>
 <blockquote>
-<p>📖 <strong>想离线 / 打印通读？</strong> 整本电子书（PDF 222 页 / HTML / Markdown）已生成在 <strong><code>合订本/</code></strong>。</p>
+<p>📖 <strong>想离线 / 打印通读？</strong> 整本电子书（PDF 244 页 / HTML / Markdown）已生成在 <strong><code>合订本/</code></strong>。</p>
 </blockquote>
 <hr />
 <h2 id="学习路线图建议顺序">🗺️ 学习路线图（建议顺序）</h2>
@@ -7816,6 +7828,10 @@ CUE              高                                  低
 <td><strong><code>04-进阶数据再利用.md</code></strong></td>
 <td>多组学、基因/基因组目录、MAG 库、预测结构、长期试验网络的再利用</td>
 </tr>
+<tr>
+<td><strong><code>05-宏基因组指标的提取与Meta实例.md</code></strong> ⭐</td>
+<td><strong>带真实数字的算例</strong>：功能基因丰度的单位与标准化、lnRR 跨单位合并、完整 Meta + 调节因子 + 再分析标准化实例</td>
+</tr>
 </tbody>
 </table>
 <hr />
@@ -8080,6 +8096,9 @@ res_mod &lt;- rma(yi, vi, mods=~climate+soil_C, data=dat)  # 调节因子(Meta�
 <li><strong>Meta 分析救不了烂的原始研究</strong>：它只是综合，不能凭空提高证据质量。</li>
 </ol>
 <hr />
+<blockquote>
+<p>👉 <strong>想看带真实数字、针对宏基因组功能基因指标的完整算例</strong>（怎么从不同单位的论文里提数据、算 lnRR、合并、拆调节因子）→ <strong><code>05-宏基因组指标的提取与Meta实例.md</code></strong>。</p>
+</blockquote>
 <h2 id="本篇要点">📌 本篇要点</h2>
 <ol>
 <li>Meta 分析 = 把多项研究的<strong>效应量</strong>加权合成普适结论，只需别人的<strong>均值/SD/n</strong>。</li>
@@ -8295,5 +8314,236 @@ res_mod &lt;- rma(yi, vi, mods=~climate+soil_C, data=dat)  # 调节因子(Meta�
 <li>MGnify（分析结果 + 基因组目录）· https://www.ebi.ac.uk/metagenomics</li>
 </ul>
 <p>⬅️ 回到 <strong>模块15总览</strong> ｜ <strong>知识库总览</strong></p>
+</section><section class="chapter" id="chap-54">
+<h1 id="155-宏基因组指标的提取与-meta-实例带数字走一遍">15.5 · 宏基因组指标的提取与 Meta 实例（带数字走一遍）</h1>
+<blockquote>
+<p>前面 15.2/15.3 讲了"方法框架"。但你做的是<strong>宏基因组</strong>——必须落到"<strong>到底哪些指标、怎么标准化、怎么算效应量、怎么合成</strong>"。这一篇用<strong>真实数字</strong>把整个过程走一遍，专治"道理懂了但不会动手"。</p>
+</blockquote>
+<hr />
+<h2 id="一先搞清能拿来做-meta-整合的宏基因组指标有哪些">一、先搞清：能拿来做 Meta / 整合的"宏基因组指标"有哪些</h2>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>具体指标</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>功能基因丰度</strong></td>
+<td>单个标志基因 / 一类基因</td>
+<td><code>nifH</code>、<code>nosZ</code>、CAZy 总量（<strong>14.1</strong>）</td>
+</tr>
+<tr>
+<td><strong>功能基因比值</strong></td>
+<td>反映过程平衡</td>
+<td><code>nosZ/(nirK+nirS)</code>（N₂O 排放倾向）</td>
+</tr>
+<tr>
+<td><strong>通路丰度</strong></td>
+<td>KEGG 通路水平</td>
+<td>氮代谢通路、碳降解通路</td>
+</tr>
+<tr>
+<td><strong>多样性</strong></td>
+<td>α（Shannon/richness）、功能多样性</td>
+<td>群落或功能基因多样性</td>
+</tr>
+<tr>
+<td><strong>β 多样性 / 群落结构</strong></td>
+<td>距离、排序轴</td>
+<td>Bray-Curtis、PCoA1</td>
+</tr>
+<tr>
+<td><strong>MAG 层面</strong></td>
+<td>MAG 数量/质量、携带某通路的 MAG 比例</td>
+<td>高质量 MAG 占比</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>你最常做 Meta 的，是 <strong>某功能基因（类）的丰度</strong>和 <strong>α 多样性</strong>——下面就以它们为例。</p>
+</blockquote>
+<hr />
+<h2 id="二关键难点宏基因组指标的单位五花八门必须先统一理解">二、关键难点：宏基因组指标的"单位"五花八门（必须先统一理解）</h2>
+<p>同一个"nosZ 丰度"，不同论文报的单位可能完全不同。<strong>这是宏基因组做 Meta 最特殊、最容易错的地方</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>单位 / 标准化法</th>
+<th>含义</th>
+<th>跨研究 Meta 友好度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>相对丰度 %</strong>（总和标准化 TSS）</td>
+<td>nosZ 占所有基因/功能的比例</td>
+<td>组成型，常见但要小心（<strong>模型14</strong>）</td>
+</tr>
+<tr>
+<td><strong>RPKM / FPKM</strong></td>
+<td>按基因长度 + 测序深度校正</td>
+<td><strong>跨样本/跨研究有偏，慎用</strong></td>
+</tr>
+<tr>
+<td><strong>TPM / CPM</strong></td>
+<td>先长度后深度（或总和）标准化</td>
+<td>较好，但仍是"相对"</td>
+</tr>
+<tr>
+<td><strong>单拷贝基因标准化</strong>（per genome / per cell）</td>
+<td>nosZ 平均每个基因组有几个拷贝</td>
+<td><strong>最可比、最接近"绝对"概念</strong>（如 MUSiCC、76 个通用单拷贝基因 USiCGs）</td>
+</tr>
+<tr>
+<td><strong>qPCR copies/g soil</strong></td>
+<td>每克土多少个 nosZ 拷贝（绝对量）</td>
+<td>绝对量，但<strong>与宏基因组的相对量不可直接混算</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔑 <strong>两个救命认知</strong>：
+1. <strong>做 Meta 用"响应比 lnRR"就能跨越单位差异</strong>——因为 lnRR 是"处理/对照"的<strong>组内比值</strong>，<strong>无量纲</strong>，研究内部用什么单位都会<strong>约掉</strong>（下面算例会看到）。这就是为什么 lnRR 是宏基因组 Meta 的首选。
+2. <strong>但"相对丰度"和"绝对拷贝数"反映的生物学不同</strong>：组成型相对丰度里，一个基因"升高"可能只是别的降了（<strong>模型14</strong>）。<strong>混合 qPCR(绝对) 和宏基因组(相对) 数据时要分组、谨慎解读</strong>，不能不假思索合在一起。</p>
+</blockquote>
+<hr />
+<h2 id="三算例-a一个完整的-meta-分析nosz-对有机肥的响应">三、算例 A：一个完整的 Meta 分析（nosZ 对有机肥的响应）</h2>
+<p><strong>目标</strong>：有机物添加是否提升反硝化"刹车"基因 <code>nosZ</code> 的丰度？</p>
+<p><strong>第 1 步：从 5 篇论文的补充材料提取数据</strong>（注意单位各不相同，故意的）：</p>
+<table>
+<thead>
+<tr>
+<th>研究</th>
+<th>体系</th>
+<th>单位</th>
+<th>对照均值±SD (n)</th>
+<th>处理均值±SD (n)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S1</td>
+<td>农田·粪肥</td>
+<td>相对丰度(‰)</td>
+<td>1.00 ± 0.20 (4)</td>
+<td>1.80 ± 0.30 (4)</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>农田·秸秆</td>
+<td>qPCR copies/g (×10⁶)</td>
+<td>2.50 ± 0.50 (3)</td>
+<td>4.00 ± 0.80 (3)</td>
+</tr>
+<tr>
+<td>S3</td>
+<td>农田·粪肥</td>
+<td>相对丰度(%)</td>
+<td>0.40 ± 0.08 (5)</td>
+<td>0.62 ± 0.10 (5)</td>
+</tr>
+<tr>
+<td>S4</td>
+<td>农田·配施</td>
+<td>TPM</td>
+<td>1.20 ± 0.25 (4)</td>
+<td>2.40 ± 0.50 (4)</td>
+</tr>
+<tr>
+<td>S5</td>
+<td>农田·堆肥</td>
+<td>CPM</td>
+<td>0.80 ± 0.15 (3)</td>
+<td>1.10 ± 0.20 (3)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>第 2 步：每个研究算响应比 lnRR = ln(处理/对照)</strong>（无量纲，单位自动约掉）：</p>
+<pre><code>S1: ln(1.80/1.00) = ln 1.80 = 0.588
+S2: ln(4.00/2.50) = ln 1.60 = 0.470
+S3: ln(0.62/0.40) = ln 1.55 = 0.438
+S4: ln(2.40/1.20) = ln 2.00 = 0.693
+S5: ln(1.10/0.80) = ln 1.375= 0.318
+</code></pre>
+<blockquote>
+<p>看：S1 用‰、S2 用绝对拷贝、S4 用 TPM，<strong>单位天差地别，但 lnRR 都能算、且可比</strong>——因为比值把单位约掉了。</p>
+</blockquote>
+<p><strong>第 3 步：算每个研究的方差（决定它的权重）</strong>
+公式：<code>v = SD处理²/(n处理·均值处理²) + SD对照²/(n对照·均值对照²)</code>
+以 S1 为例：</p>
+<pre><code>v(S1) = 0.30²/(4×1.80²) + 0.20²/(4×1.00²)
+      = 0.09/12.96 + 0.04/4
+      = 0.00694 + 0.01000 = 0.0169   → 标准误 SE = √0.0169 ≈ 0.130
+</code></pre>
+<p>方差越小（样本大、波动小）的研究，合并时<strong>权重越大</strong>（按 1/v 加权）。</p>
+<p><strong>第 4 步：随机效应模型合并</strong>（实际用 R <code>metafor</code> 一行搞定）：</p>
+<pre><code class="language-r">library(metafor)
+dat &lt;- escalc(measure=&quot;ROM&quot;,                       # ROM = 响应比 lnRR
+  m1i=trt_mean, sd1i=trt_sd, n1i=trt_n,
+  m2i=ctl_mean, sd2i=ctl_sd, n2i=ctl_n, data=studies)
+res &lt;- rma(yi, vi, data=dat, method=&quot;REML&quot;)        # 随机效应
+forest(res); funnel(res)                            # 森林图 / 漏斗图
+</code></pre>
+<p><strong>第 5 步：解读结果</strong>（本例 5 个 lnRR 约 0.32–0.69，合并后 lnRR ≈ 0.50）：
+- <strong>换算回百分比</strong>：效应 = e^0.50 − 1 ≈ <strong>+65%</strong> → "有机物添加平均使 nosZ 丰度提升约 65%"。
+- 这与已发表 meta 的真实结论高度一致（农田 nosZ 对氮添加 +75%、对反硝化基因 +47%~+70%）。
+- 还要报：<strong>95% 置信区间</strong>（不含 0 才显著）、<strong>异质性 I²</strong>（土壤研究常 &gt;75%，说明要找调节因子）。</p>
+<hr />
+<h2 id="四算例-b调节因子分析为什么看体系很重要">四、算例 B：调节因子分析（为什么"看体系"很重要）</h2>
+<p>真实 meta 发现 <code>nifH</code>（固氮）的响应<strong>强烈依生态系统</strong>：</p>
+<pre><code>森林：N 添加使 nifH 下降 ~33%  → lnRR = ln(1−0.33) = ln 0.67 ≈ −0.40
+农田：N 添加对 nifH 基本无变化 → lnRR ≈ 0
+</code></pre>
+<ul>
+<li>如果把森林和农田<strong>混在一起</strong>求平均，会得到"轻微下降"的<strong>误导性结论</strong>；</li>
+<li><strong>按体系分亚组</strong>（或 Meta 回归 <code>mods=~ecosystem</code>）才看出真相："森林显著降、农田不变"。</li>
+<li>这就是 <strong>15.2</strong> 强调的：<strong>高异质时，精华在调节因子</strong>（气候、体系、初始地力、施用量、年限）。</li>
+</ul>
+<blockquote>
+<p>对你的方向：做"农田固碳增产"meta 时，务必把 <strong>初始 SOC、气候、作物、施用量、年限</strong> 设为调节因子（呼应 <strong>14.6</strong>）。</p>
+</blockquote>
+<hr />
+<h2 id="五算例-c原始数据再分析里指标怎么标准化出来">五、算例 C：原始数据再分析里，指标怎么"标准化"出来</h2>
+<p>如果你走 <strong>15.3</strong> 的"下原始 reads 统一重算"，得到的功能基因表要先<strong>标准化</strong>才能跨样本比。推荐<strong>单拷贝基因标准化</strong>（最可比）：</p>
+<pre><code>某样本里：  nosZ 比对上的 reads 数 = 1200
+            一组通用单拷贝基因(USiCGs)的平均 reads 数 = 800
+→ nosZ 的&quot;每基因组平均拷贝数&quot; = 1200 / 800 = 1.5  copies/genome
+   （含义：平均每个微生物基因组里有约 1.5 个 nosZ）
+</code></pre>
+<p>这样得到的"每基因组拷贝数"<strong>消除了测序深度和基因组大小的影响，跨样本/跨研究可比</strong>，是再分析里最稳妥的功能基因指标（MUSiCC 等工具就是干这个的）。</p>
+<p>得到统一的"基因×样本"表后：
+1. <strong>先查批次效应</strong>：PCoA 看样本是按"处理"聚还是按"研究"聚——若按研究聚成块，<strong>批次效应严重，按 15.3 处理</strong>；
+2. 组成型指标做差异用 CLR/ALDEx2（<strong>模型14</strong>）；
+3. 再和元数据（pH、SOC、产量）做关联。</p>
+<hr />
+<h2 id="六宏基因组指标做-meta整合的专属坑清单">六、宏基因组指标做 Meta/整合的"专属坑"清单 ⚠️</h2>
+<pre><code>❌ 直接平均不同研究的&quot;相对丰度%&quot;          → 组成型,不能简单平均;用 lnRR(组内比值)
+❌ 把 qPCR(绝对copies/g) 和宏基因组(相对%) 混在一起算 → 反映不同生物学,分组别硬合
+❌ 跨研究用 RPKM/FPKM 比绝对值             → 跨样本有偏;再分析统一用单拷贝标准化/TPM
+❌ amoA 不分 AOA/AOB、nirK 与 nirS 混为一谈 → 必须同类比同类(基因/数据库要对齐)
+❌ 只报总平均、不分体系/地力                → 高异质时按调节因子拆(算例B)
+❌ 用基因丰度(潜力)下&quot;提高了过程速率&quot;结论   → 配通量数据(框架3)
+❌ 不查批次就合并多研究原始数据             → PCoA自查+控批次(框架6,15.3)
+</code></pre>
+<hr />
+<h2 id="本篇要点">📌 本篇要点</h2>
+<ol>
+<li>宏基因组可 Meta 的指标：<strong>功能基因(类)丰度、基因比值、通路、α/β 多样性、MAG 指标</strong>。</li>
+<li><strong>单位五花八门</strong>（相对%、TPM/CPM、单拷贝标准化、qPCR 绝对）——做 Meta 用 <strong>lnRR（组内比值，无量纲）</strong>即可跨单位合并；但<strong>相对 vs 绝对别硬混</strong>。</li>
+<li>完整算例：提数据→算 lnRR→按 1/方差加权→随机效应合并→换算成 %→查异质性→拆调节因子。</li>
+<li>再分析时功能基因优先<strong>单拷贝基因标准化（每基因组拷贝数）</strong>，最可比。</li>
+</ol>
+<h2 id="延伸阅读">📚 延伸阅读</h2>
+<ul>
+<li>氮肥对农田氮循环基因丰度影响的 meta 分析(含各基因效应量) · https://www.sciencedirect.com/science/article/abs/pii/S0038071718302864</li>
+<li>有机添加对氮循环基因的 meta 分析(2024) · https://www.sciencedirect.com/science/article/abs/pii/S0048969724011872</li>
+<li>不同生态系统氮循环基因响应的 meta 分析 · https://link.springer.com/article/10.1007/s11104-022-05420-6</li>
+<li>MUSiCC：基于标志基因的宏基因组标准化框架 · https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4391136/</li>
+<li>宏基因组基因丰度标准化方法比较 · https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5910605/</li>
+</ul>
+<p>⬅️ 回到 <strong>模块15总览</strong> ｜ 复习 Meta 方法 <strong>15.2</strong> ｜ 原始数据再分析 <strong>15.3</strong></p>
 </section>
 </div></body></html>
