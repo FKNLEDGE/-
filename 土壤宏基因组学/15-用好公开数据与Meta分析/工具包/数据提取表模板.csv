@@ -1,0 +1,38 @@
+# Meta 分析数据提取表模板
+#
+# 用法：每读一篇论文，提取一行（或一个处理对比一行）填进来。
+# - 同一篇文章里多个处理/地点，各占一行，但 study_id 相同（分析时注意非独立，见 15.2）。
+# - 单位(unit)允许各研究不同——做 lnRR 时会被约掉(见 15.5)，但 qPCR绝对量 与 宏基因组相对量 建议分开分析。
+# - 缺失填 NA。均值/标准差/样本量(n)是计算效应量的必需项。
+# - SD 若文中给的是标准误(SE)，先换算：SD = SE × sqrt(n)。
+#
+# 字段说明：
+#   study_id      研究编号(自定，如 S1/S2 或 第一作者_年份)
+#   citation      出处(作者, 年份, 期刊/DOI)
+#   accession     原始数据编号(PRJNA/PRJEB，若有)
+#   country/site  地点
+#   crop          作物体系(玉米/水稻/小麦/轮作…)
+#   climate       气候(温度/降水或气候带，做调节因子用)
+#   soil_type     土壤类型/质地
+#   soil_pH       土壤pH(关键混杂因子!)
+#   initial_SOC   初始有机碳(g/kg，做调节因子/阈值用)
+#   treatment     处理(如 manure / NPK / straw / biochar / NPK+manure)
+#   control       对照定义(如 CK无肥 / 单施化肥)
+#   duration_yr   试验年限(年，固碳关键)
+#   rate          施用量(注明单位)
+#   gene          指标名(nifH/amoA_AOA/amoA_AOB/nirK/nirS/nosZ/CAZy/SOC/yield…)
+#   unit          指标单位(rel_abund_% / TPM / CPM / copies_per_genome / qPCR_copies_g / g_kg …)
+#   ctl_mean      对照组均值
+#   ctl_sd        对照组标准差
+#   ctl_n         对照组样本量
+#   trt_mean      处理组均值
+#   trt_sd        处理组标准差
+#   trt_n         处理组样本量
+#   notes         备注(数据来源:正文/补充表X/图Y抠取；测序类型:鸟枪/扩增子)
+#
+study_id,citation,accession,country_site,crop,climate,soil_type,soil_pH,initial_SOC,treatment,control,duration_yr,rate,gene,unit,ctl_mean,ctl_sd,ctl_n,trt_mean,trt_sd,trt_n,notes
+S1,"Zhang 2021, STOTEN",PRJNA000001,"China, Henan",maize,temperate,loam,6.8,12.5,manure,CK,8,"30 t/ha",nosZ,rel_abund_permille,1.00,0.20,4,1.80,0.30,4,"示例行-补充表S2;鸟枪"
+S2,"Li 2020, SBB",NA,"China, Heilongjiang",maize,cold_temperate,mollisol,6.2,28.0,straw,CK,5,"9 t/ha",nosZ,qPCR_copies_g_1e6,2.50,0.50,3,4.00,0.80,3,"示例行-qPCR绝对量,单独分析"
+S3,"Wang 2022, Geoderma",PRJNA000003,"China, Shandong",wheat,temperate,fluvisol,7.4,9.8,NPK_manure,NPK,10,"NPK+20 t/ha manure",nosZ,rel_abund_percent,0.40,0.08,5,0.62,0.10,5,"示例行-鸟枪"
+S4,"Chen 2023, FrontMicro",PRJNA000004,"China, Jiangsu",rice,subtropical,paddy,5.9,18.2,straw_biochar,NPK,6,"biochar 20 t/ha",nosZ,TPM,1.20,0.25,4,2.40,0.50,4,"示例行-鸟枪TPM"
+S5,"Kumar 2019, AEE",NA,"India, Punjab",rice_wheat,subtropical,alluvial,7.8,7.5,compost,CK,3,"10 t/ha",nosZ,CPM,0.80,0.15,3,1.10,0.20,3,"示例行"
