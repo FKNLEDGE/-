@@ -53,7 +53,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
   <h1>🦠 土壤宏基因组学</h1>
   <div class="sub">小白系统学习库 · 完整合订本</div>
   <div class="sub">第一性原理 · 20 个必学模型 · 7 个思维框架 · 10 个案例 · 实操教程 · 难点图解 · 前沿与多组学</div>
-  <div class="sub" style="margin-top:18px;font-size:.9em;">共 61 章 · 自动合并生成 · 用浏览器「打印 → 另存为 PDF」即得电子书</div>
+  <div class="sub" style="margin-top:18px;font-size:.9em;">共 62 章 · 自动合并生成 · 用浏览器「打印 → 另存为 PDF」即得电子书</div>
 </div>
 <div class="tocbox"><h2 style="margin-top:0;border:none;">📑 目录</h2>
 <ul class='toc'><li><a href="#chap-1"><b>🦠 土壤宏基因组学 · 小白系统学习库</b></a>
@@ -307,7 +307,18 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#从数据到图一条线">🧩 从数据到图，一条线</a></li>
 </ul>
 </li>
-<li><a href="#chap-26"><b>09 · 速记卡片与速查图</b></a>
+<li><a href="#chap-26"><b>08.5 · 图解：测到的 DNA ≠ 活菌（relic DNA 与休眠）</b></a>
+<ul>
+<li><a href="#一问题你提的总-dna混着死的睡着的醒着的">一、问题：你提的&quot;总 DNA&quot;，混着死的、睡着的、醒着的</a></li>
+<li><a href="#二后果它会把你引向哪些错误结论">二、后果：它会把你引向哪些错误结论</a></li>
+<li><a href="#三一条清醒度阶梯把这些坑串成一条线">三、一条&quot;清醒度阶梯&quot;：把这些坑串成一条线</a></li>
+<li><a href="#四怎么办思路不讲操作">四、怎么办（思路，不讲操作）</a></li>
+<li><a href="#五判断力护栏">五、判断力护栏</a></li>
+<li><a href="#六对你固碳-施肥的具体提醒">六、对你（固碳 / 施肥）的具体提醒</a></li>
+<li><a href="#延伸阅读">📚 延伸阅读</a></li>
+</ul>
+</li>
+<li><a href="#chap-27"><b>09 · 速记卡片与速查图</b></a>
 <ul>
 <li><a href="#卡片-1-关键数字阈值速查最高频">🎴 卡片 1 · 关键数字/阈值速查（最高频）</a></li>
 <li><a href="#卡片-2-分析流程命令骨架照着改">🎴 卡片 2 · 分析流程命令骨架（照着改）</a></li>
@@ -319,14 +330,14 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#卡片-8-新手避坑清单贴脑门上">🎴 卡片 8 · 新手避坑清单（贴脑门上）</a></li>
 </ul>
 </li>
-<li><a href="#chap-27"><b>10 · 前沿模型与方法 · 总览</b></a>
+<li><a href="#chap-28"><b>10 · 前沿模型与方法 · 总览</b></a>
 <ul>
 <li><a href="#一句话先看懂每个前沿在补哪块短板">🎯 一句话先看懂：每个前沿在补哪块短板</a></li>
 <li><a href="#本模块内容">📋 本模块内容</a></li>
 <li><a href="#前沿的总趋势记住这条主线">🧭 前沿的总趋势（记住这条主线）</a></li>
 </ul>
 </li>
-<li><a href="#chap-28"><b>10.1 · AI 与基础模型：用人工智能照亮&quot;暗物质&quot;</b></a>
+<li><a href="#chap-29"><b>10.1 · AI 与基础模型：用人工智能照亮&quot;暗物质&quot;</b></a>
 <ul>
 <li><a href="#一先回忆痛点暗物质问题">一、先回忆痛点：暗物质问题</a></li>
 <li><a href="#二关键思想把序列当成语言来学">二、关键思想：把&quot;序列&quot;当成&quot;语言&quot;来学</a></li>
@@ -337,7 +348,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-29"><b>10.2 · Hi-C 邻近连接 与 病毒组</b></a>
+<li><a href="#chap-30"><b>10.2 · Hi-C 邻近连接 与 病毒组</b></a>
 <ul>
 <li><a href="#一先回忆痛点">一、先回忆痛点</a></li>
 <li><a href="#二核心思想在细胞被打碎前先把邻居焊在一起">二、核心思想：在细胞被打碎前，先把&quot;邻居&quot;焊在一起</a></li>
@@ -350,7 +361,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-30"><b>10.3 · 从&quot;基因潜力&quot;到&quot;活性与互作&quot;</b></a>
+<li><a href="#chap-31"><b>10.3 · 从&quot;基因潜力&quot;到&quot;活性与互作&quot;</b></a>
 <ul>
 <li><a href="#一痛点回顾">一、痛点回顾</a></li>
 <li><a href="#二核心思想让活跃的菌自己变重">二、核心思想：让活跃的菌&quot;自己变重&quot;</a></li>
@@ -364,7 +375,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-31"><b>10.4 · 培养组学复兴：从&quot;读 DNA&quot;回到&quot;养出来&quot;</b></a>
+<li><a href="#chap-32"><b>10.4 · 培养组学复兴：从&quot;读 DNA&quot;回到&quot;养出来&quot;</b></a>
 <ul>
 <li><a href="#一回到原点当初为什么放弃培养现在为什么又捡回来">一、回到原点：当初为什么放弃培养、现在为什么又捡回来</a></li>
 <li><a href="#二为什么养不活正在被攻破">二、为什么&quot;养不活&quot;正在被攻破</a></li>
@@ -374,7 +385,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-32"><b>10.5 · 菌株水平与微多样性：同一个&quot;种&quot;里的大不同</b></a>
+<li><a href="#chap-33"><b>10.5 · 菌株水平与微多样性：同一个&quot;种&quot;里的大不同</b></a>
 <ul>
 <li><a href="#一为什么种不够一个一秒就懂的比喻">一、为什么&quot;种&quot;不够：一个一秒就懂的比喻</a></li>
 <li><a href="#二宏基因组怎么看到株思路不讲操作">二、宏基因组怎么&quot;看到&quot;株（思路，不讲操作）</a></li>
@@ -383,14 +394,14 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-33"><b>11 · 多组学整合 与 他山之石 · 总览</b></a>
+<li><a href="#chap-34"><b>11 · 多组学整合 与 他山之石 · 总览</b></a>
 <ul>
 <li><a href="#一先纠正一个常见误解">一、先纠正一个常见误解</a></li>
 <li><a href="#二本模块内容">二、本模块内容</a></li>
 <li><a href="#三一图看懂地基-楼层-外援">三、一图看懂&quot;地基 + 楼层 + 外援&quot;</a></li>
 </ul>
 </li>
-<li><a href="#chap-34"><b>11.1 · 组学阶梯与多组学整合</b></a>
+<li><a href="#chap-35"><b>11.1 · 组学阶梯与多组学整合</b></a>
 <ul>
 <li><a href="#一组学阶梯从能干到真干了的四级台阶">一、组学阶梯：从&quot;能干&quot;到&quot;真干了&quot;的四级台阶</a></li>
 <li><a href="#二为什么地基既是优点也是局限">二、为什么&quot;地基&quot;既是优点也是局限</a></li>
@@ -400,7 +411,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-35"><b>11.2 · 他山之石：向别的领域借智慧</b></a>
+<li><a href="#chap-36"><b>11.2 · 他山之石：向别的领域借智慧</b></a>
 <ul>
 <li><a href="#1-海洋tara-oceans-大科学-大数据的范本">1. 海洋：Tara Oceans —— &quot;大科学 + 大数据&quot;的范本</a></li>
 <li><a href="#2-人体肠道方法学的练兵场">2. 人体肠道：方法学的&quot;练兵场&quot;</a></li>
@@ -414,7 +425,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-36"><b>11.3 · 各类组学详解：宏基因组的&quot;楼上邻居&quot;们</b></a>
+<li><a href="#chap-37"><b>11.3 · 各类组学详解：宏基因组的&quot;楼上邻居&quot;们</b></a>
 <ul>
 <li><a href="#1-宏转录组metatranscriptomics-测-rna看在表达什么">1. 宏转录组（Metatranscriptomics）—— 测 RNA，看&quot;在表达什么&quot;</a></li>
 <li><a href="#2-宏蛋白组metaproteomics-测蛋白看真造出了什么">2. 宏蛋白组（Metaproteomics）—— 测蛋白，看&quot;真造出了什么&quot;</a></li>
@@ -424,7 +435,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-37"><b>11.4 · 从组学领域借方法：最该借的&quot;他山之石&quot;</b></a>
+<li><a href="#chap-38"><b>11.4 · 从组学领域借方法：最该借的&quot;他山之石&quot;</b></a>
 <ul>
 <li><a href="#一从人类基因组学借gwas-mwas">一、从人类基因组学借：GWAS → MWAS</a></li>
 <li><a href="#二从单细胞组学借单细胞分辨看清一个个体">二、从单细胞组学借：单细胞分辨（看清&quot;一个个体&quot;）</a></li>
@@ -434,7 +445,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-38"><b>11.5 · 他山之石进阶：更多生态系统与跨学科</b></a>
+<li><a href="#chap-39"><b>11.5 · 他山之石进阶：更多生态系统与跨学科</b></a>
 <ul>
 <li><a href="#1-极端环境-宏基因组学的发源地之一">1. 极端环境 —— 宏基因组学的&quot;发源地&quot;之一</a></li>
 <li><a href="#2-植物微生物组-天然的模式系统">2. 植物微生物组 —— 天然的&quot;模式系统&quot;</a></li>
@@ -451,7 +462,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-39"><b>11.6 · 代谢组学深入：从&quot;产出端&quot;读懂土壤里到底发生了什么</b></a>
+<li><a href="#chap-40"><b>11.6 · 代谢组学深入：从&quot;产出端&quot;读懂土壤里到底发生了什么</b></a>
 <ul>
 <li><a href="#一一句话宏基因组测能做代谢组测做出了什么">一、一句话：宏基因组测&quot;能做&quot;，代谢组测&quot;做出了什么&quot;</a></li>
 <li><a href="#二代谢组到底测什么先分清三组关键二分法">二、代谢组到底测什么：先分清三组关键二分法</a></li>
@@ -465,7 +476,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读本篇搜集的权威材料">📚 延伸阅读（本篇搜集的权威材料）</a></li>
 </ul>
 </li>
-<li><a href="#chap-40"><b>11.7 · 被忽略的成员：真菌、古菌、原生生物与土壤食物网</b></a>
+<li><a href="#chap-41"><b>11.7 · 被忽略的成员：真菌、古菌、原生生物与土壤食物网</b></a>
 <ul>
 <li><a href="#一为什么会只见细菌一个被工具偏向制造的盲区">一、为什么会&quot;只见细菌&quot;——一个被工具偏向制造的盲区</a></li>
 <li><a href="#二真菌-真核最难测却对你固碳最关键的一类">二、真菌 / 真核：最难测、却对你固碳最关键的一类</a></li>
@@ -475,14 +486,14 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-41"><b>12 · 自测与练习 · 总览</b></a>
+<li><a href="#chap-42"><b>12 · 自测与练习 · 总览</b></a>
 <ul>
 <li><a href="#四套练习">📋 四套练习</a></li>
 <li><a href="#怎么用">🎯 怎么用</a></li>
 <li><a href="#掌握度自评做完四套后">🏅 掌握度自评（做完四套后）</a></li>
 </ul>
 </li>
-<li><a href="#chap-42"><b>自测 01 · 基础概念</b></a>
+<li><a href="#chap-43"><b>自测 01 · 基础概念</b></a>
 <ul>
 <li><a href="#一选择题单选">一、选择题（单选）</a></li>
 <li><a href="#二判断题对错并说明为什么">二、判断题（对/错，并说明为什么）</a></li>
@@ -490,7 +501,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#-">---</a></li>
 </ul>
 </li>
-<li><a href="#chap-43"><b>自测 02 · 分析与统计</b></a>
+<li><a href="#chap-44"><b>自测 02 · 分析与统计</b></a>
 <ul>
 <li><a href="#一选择题单选">一、选择题（单选）</a></li>
 <li><a href="#二计算题每题一步即可">二、计算题（每题一步即可）</a></li>
@@ -498,7 +509,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#-">---</a></li>
 </ul>
 </li>
-<li><a href="#chap-44"><b>自测 03 · 生态与功能</b></a>
+<li><a href="#chap-45"><b>自测 03 · 生态与功能</b></a>
 <ul>
 <li><a href="#一选择题单选">一、选择题（单选）</a></li>
 <li><a href="#二判断题对错并说明">二、判断题（对/错，并说明）</a></li>
@@ -506,7 +517,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#-">---</a></li>
 </ul>
 </li>
-<li><a href="#chap-45"><b>自测 04 · 纠错与案例分析 ⭐</b></a>
+<li><a href="#chap-46"><b>自测 04 · 纠错与案例分析 ⭐</b></a>
 <ul>
 <li><a href="#第一部分-找错题每段至少-1-个错误">第一部分 · 找错题（每段至少 1 个错误）</a></li>
 <li><a href="#第二部分-案例分析综合题">第二部分 · 案例分析（综合题）</a></li>
@@ -516,7 +527,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#全部做完了">🎓 全部做完了？</a></li>
 </ul>
 </li>
-<li><a href="#chap-46"><b>13 · 资源导航与优质教程（站在巨人肩上）</b></a>
+<li><a href="#chap-47"><b>13 · 资源导航与优质教程（站在巨人肩上）</b></a>
 <ul>
 <li><a href="#一-中文一体化流程小白首选最省心">一、🇨🇳 中文一体化流程（小白首选，最省心）</a></li>
 <li><a href="#二-国际标准化流程要可复现要发论文">二、🌍 国际标准化流程（要可复现、要发论文）</a></li>
@@ -528,14 +539,14 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#一句话总清单收藏版">📌 一句话总清单（收藏版）</a></li>
 </ul>
 </li>
-<li><a href="#chap-47"><b>14 · 专题：土壤养分循环 与 施肥/有机物添加</b></a>
+<li><a href="#chap-48"><b>14 · 专题：土壤养分循环 与 施肥/有机物添加</b></a>
 <ul>
 <li><a href="#为什么这个方向特别适合用宏基因组">为什么这个方向特别适合用宏基因组</a></li>
 <li><a href="#本专题内容">📋 本专题内容</a></li>
 <li><a href="#一句话先建立全局">🧭 一句话先建立全局</a></li>
 </ul>
 </li>
-<li><a href="#chap-48"><b>14.1 · 养分循环的微生物机制与功能基因（基因字典）</b></a>
+<li><a href="#chap-49"><b>14.1 · 养分循环的微生物机制与功能基因（基因字典）</b></a>
 <ul>
 <li><a href="#一氮循环n-施肥研究的绝对主角">一、氮循环（N）—— 施肥研究的绝对主角</a></li>
 <li><a href="#二碳循环c-有机物添加的核心战场">二、碳循环（C）—— 有机物添加的核心战场</a></li>
@@ -546,7 +557,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-49"><b>14.2 · 化肥与有机物添加的微生物效应</b></a>
+<li><a href="#chap-50"><b>14.2 · 化肥与有机物添加的微生物效应</b></a>
 <ul>
 <li><a href="#一四类处理的性格差异先建立直觉">一、四类处理的&quot;性格&quot;差异（先建立直觉）</a></li>
 <li><a href="#二对氮循环的典型影响">二、对氮循环的典型影响 ⭐</a></li>
@@ -558,7 +569,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-50"><b>14.3 · 有机碳固存与激发效应（有机物添加的灵魂机制）</b></a>
+<li><a href="#chap-51"><b>14.3 · 有机碳固存与激发效应（有机物添加的灵魂机制）</b></a>
 <ul>
 <li><a href="#一一块有机碳进了土有两条命运">一、一块有机碳进了土，有两条命运</a></li>
 <li><a href="#二微生物碳泵microbial-carbon-pump-碳怎么被封存">二、微生物碳泵（Microbial Carbon Pump）—— 碳怎么被&quot;封存&quot;</a></li>
@@ -568,7 +579,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-51"><b>14.4 · 研究设计与分析方案（可照做的蓝图）⭐</b></a>
+<li><a href="#chap-52"><b>14.4 · 研究设计与分析方案（可照做的蓝图）⭐</b></a>
 <ul>
 <li><a href="#第-0-步-先定准科学问题决定后面一切">第 0 步 · 先定准科学问题（决定后面一切）</a></li>
 <li><a href="#第-1-步-实验设计成败在这里不在分析">第 1 步 · 实验设计（成败在这里，不在分析）</a></li>
@@ -582,7 +593,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-52"><b>14.5 · 化学计量比视角：把&quot;固碳&quot;和&quot;增产&quot;统一起来</b></a>
+<li><a href="#chap-53"><b>14.5 · 化学计量比视角：把&quot;固碳&quot;和&quot;增产&quot;统一起来</b></a>
 <ul>
 <li><a href="#一先懂生态化学计量学微生物是挑食的固定配方厨师">一、先懂&quot;生态化学计量学&quot;：微生物是&quot;挑食的固定配方厨师&quot;</a></li>
 <li><a href="#二枢纽机制碳利用效率cue与阈值元素比ter">二、枢纽机制：碳利用效率（CUE）与阈值元素比（TER）</a></li>
@@ -594,7 +605,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-53"><b>14.6 · 全球视角与跨体系综合</b></a>
+<li><a href="#chap-54"><b>14.6 · 全球视角与跨体系综合</b></a>
 <ul>
 <li><a href="#一全球尺度的核心结论固碳-增产-排放">一、全球尺度的核心结论（固碳 + 增产 + 排放）</a></li>
 <li><a href="#二固碳与增产协同为主但有真实权衡">二、固碳与增产：协同为主，但有真实权衡</a></li>
@@ -604,14 +615,14 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-54"><b>15 · 用好公开数据 与 Meta 分析（不一定要自己测序）</b></a>
+<li><a href="#chap-55"><b>15 · 用好公开数据 与 Meta 分析（不一定要自己测序）</b></a>
 <ul>
 <li><a href="#一三个层次的数据再利用先分清你要哪种">一、三个层次的数据再利用（先分清你要哪种）</a></li>
 <li><a href="#二本模块内容">二、本模块内容</a></li>
 <li><a href="#三为什么这是事半功倍的能力">三、为什么这是&quot;事半功倍&quot;的能力</a></li>
 </ul>
 </li>
-<li><a href="#chap-55"><b>15.1 · 公开数据从哪来、怎么下</b></a>
+<li><a href="#chap-56"><b>15.1 · 公开数据从哪来、怎么下</b></a>
 <ul>
 <li><a href="#一原始测序数据仓库下-reads-的地方">一、原始测序数据仓库（下 reads 的地方）</a></li>
 <li><a href="#二加工好的高级数据省去自己算">二、加工好的&quot;高级&quot;数据（省去自己算）</a></li>
@@ -622,7 +633,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-56"><b>15.2 · Meta 分析方法（把很多研究合成一个普适结论）</b></a>
+<li><a href="#chap-57"><b>15.2 · Meta 分析方法（把很多研究合成一个普适结论）</b></a>
 <ul>
 <li><a href="#一它解决什么问题为什么需要它">一、它解决什么问题（为什么需要它）</a></li>
 <li><a href="#二标准流程prisma-框架照着走">二、标准流程（PRISMA 框架，照着走）</a></li>
@@ -633,7 +644,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-57"><b>15.3 · 公开宏基因组数据再分析（下原始序列，统一重算）</b></a>
+<li><a href="#chap-58"><b>15.3 · 公开宏基因组数据再分析（下原始序列，统一重算）</b></a>
 <ul>
 <li><a href="#一什么时候该做再分析而不是-meta-分析">一、什么时候该做&quot;再分析&quot;（而不是 Meta 分析）</a></li>
 <li><a href="#二标准流程">二、标准流程</a></li>
@@ -644,7 +655,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-58"><b>15.4 · 进阶数据再利用（多组学 / 基因目录 / MAG 库 / 预测结构）</b></a>
+<li><a href="#chap-59"><b>15.4 · 进阶数据再利用（多组学 / 基因目录 / MAG 库 / 预测结构）</b></a>
 <ul>
 <li><a href="#一有哪些进阶数据可借">一、有哪些&quot;进阶数据&quot;可借</a></li>
 <li><a href="#二几种高价值玩法">二、几种高价值玩法</a></li>
@@ -654,7 +665,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-59"><b>15.5 · 宏基因组指标的提取与 Meta 实例（带数字走一遍）</b></a>
+<li><a href="#chap-60"><b>15.5 · 宏基因组指标的提取与 Meta 实例（带数字走一遍）</b></a>
 <ul>
 <li><a href="#一先搞清能拿来做-meta-整合的宏基因组指标有哪些">一、先搞清：能拿来做 Meta / 整合的&quot;宏基因组指标&quot;有哪些</a></li>
 <li><a href="#二关键难点宏基因组指标的单位五花八门必须先统一理解">二、关键难点：宏基因组指标的&quot;单位&quot;五花八门（必须先统一理解）</a></li>
@@ -666,7 +677,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-60"><b>15.6 · 候选公开数据集线索（农田·施肥·养分循环·固碳）</b></a>
+<li><a href="#chap-61"><b>15.6 · 候选公开数据集线索（农田·施肥·养分循环·固碳）</b></a>
 <ul>
 <li><a href="#一可下载再分析的原始数据集层次2见153">一、可下载再分析的原始数据集（层次2，见15.3）</a></li>
 <li><a href="#二可整合的大型资源层次23做全球跨体系">二、可整合的大型资源（层次2/3，做全球/跨体系）</a></li>
@@ -676,7 +687,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#三条纪律再强调">⚠️ 三条纪律（再强调）</a></li>
 </ul>
 </li>
-<li><a href="#chap-61"><b>15.7 · 实战工具包 与 各候选数据集的具体用法</b></a>
+<li><a href="#chap-62"><b>15.7 · 实战工具包 与 各候选数据集的具体用法</b></a>
 <ul>
 <li><a href="#一工具包里有什么">一、工具包里有什么</a></li>
 <li><a href="#二按候选数据集对号入座核实编号后">二、按候选数据集对号入座（核实编号后）</a></li>
@@ -698,7 +709,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 </ul>
 <blockquote>
 <p>🧭 <strong>只想"看懂思路、了解可能性"、暂不打算动手？</strong> 先读 <strong><code>思路地图 · 灵魂导览</code></strong>——一篇讲通全领域<strong>逻辑链、思维跃迁、可能性与判断力</strong>的导览，不含任何操作。配合 <code>01 第一性原理</code> + <code>03 思维框架</code>，就够你"想通"这个领域。</p>
-<p>📖 <strong>想离线 / 打印通读？</strong> 整本电子书（PDF 274 页 / HTML / Markdown）已生成在 <strong><code>合订本/</code></strong>。</p>
+<p>📖 <strong>想离线 / 打印通读？</strong> 整本电子书（PDF 287 页 / HTML / Markdown）已生成在 <strong><code>合订本/</code></strong>。</p>
 </blockquote>
 <hr />
 <h2 id="学习路线图建议顺序">🗺️ 学习路线图（建议顺序）</h2>
@@ -1327,7 +1338,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <p><strong>必然后果</strong>：只要能读到一段 DNA，就能（通过和已知序列比对）推断<strong>它来自谁</strong>、以及<strong>它编码什么功能</strong>。</p>
 <p><strong>于是诞生了</strong>：用序列回答两个核心问题——<strong>"Who is there?"（物种组成）</strong>和 <strong>"What can they do?"（功能潜力）</strong>。后面的"物种分类模型""功能注释模型"都是为这两个问题服务的。</p>
 <blockquote>
-<p>⚠️ 注意"潜力"二字：基因存在 ≠ 正在表达。这点会反复出现，见思维框架 3。</p>
+<p>⚠️ 注意"潜力"二字：基因存在 ≠ 正在表达（见思维框架 3）；更靠前一步——<strong>测到 DNA 甚至 ≠ 来自活菌</strong>（可能是死细胞残留的 relic DNA），见难点 <strong>08.5</strong>。</p>
 </blockquote>
 <hr />
 <h2 id="原理-2环境里所有生物的-dna-是混在一起的这正是宏meta的含义">原理 2：环境里所有生物的 DNA 是混在一起的——这正是"宏（meta）"的含义</h2>
@@ -3126,6 +3137,167 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 </tr>
 </tbody>
 </table>
+<h3 id="活性与清醒度测到-活的-在表达">活性与"清醒度"（测到 → 活的 → 在表达）</h3>
+<table>
+<thead>
+<tr>
+<th>中文</th>
+<th>英文</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>遗留DNA / 胞外DNA</td>
+<td>Relic / extracellular DNA</td>
+<td>死细胞残留、被土壤吸附保护的 DNA；测序无法区分，会高估多样性（难点 08.5）</td>
+</tr>
+<tr>
+<td>微生物休眠</td>
+<td>Dormancy</td>
+<td>细胞活着但不活动；土壤多数微生物长期处于休眠</td>
+</tr>
+<tr>
+<td>微生物种子库</td>
+<td>Microbial seed bank</td>
+<td>休眠菌构成的"备用库"，扰动后可被唤醒</td>
+</tr>
+<tr>
+<td>宏转录组</td>
+<td>Metatranscriptomics</td>
+<td>测 RNA，看"在表达什么"（活性）</td>
+</tr>
+<tr>
+<td>宏蛋白组</td>
+<td>Metaproteomics</td>
+<td>测蛋白，看"真造出了什么"</td>
+</tr>
+<tr>
+<td>代谢组</td>
+<td>Metabolomics</td>
+<td>测代谢物，看"产出了什么"（结果）</td>
+</tr>
+<tr>
+<td>外代谢组</td>
+<td>Exometabolome</td>
+<td>分泌到环境的代谢物（土壤溶液/根系分泌物）</td>
+</tr>
+<tr>
+<td>定量稳定同位素探针</td>
+<td>qSIP</td>
+<td>用同位素标记追踪"谁真的在生长"（10.3）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="固碳-养分专题">固碳 · 养分专题</h3>
+<table>
+<thead>
+<tr>
+<th>中文</th>
+<th>英文</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>微生物碳泵</td>
+<td>Microbial Carbon Pump (MCP)</td>
+<td>微生物反复把活性碳加工成自身 → 坏死体 → 封存</td>
+</tr>
+<tr>
+<td>坏死体</td>
+<td>Necromass</td>
+<td>微生物残体；占稳定 SOC 过半、真菌为主</td>
+</tr>
+<tr>
+<td>碳利用效率</td>
+<td>CUE (Carbon Use Efficiency)</td>
+<td>吃进的碳变身体（→固存）vs 烧成 CO₂ 的比例</td>
+</tr>
+<tr>
+<td>矿物结合态有机质</td>
+<td>MAOM</td>
+<td>吸附在矿物上的稳定有机碳</td>
+</tr>
+<tr>
+<td>颗粒态有机质</td>
+<td>POM</td>
+<td>较大植物残体碎片，较不稳定</td>
+</tr>
+<tr>
+<td>激发效应</td>
+<td>Priming effect</td>
+<td>加活性碳反而加速老碳分解（可能丢碳）</td>
+</tr>
+<tr>
+<td>阈值元素比</td>
+<td>TER</td>
+<td>底物 C:N / C:P 超阈值后微生物转为缺养分</td>
+</tr>
+</tbody>
+</table>
+<h3 id="方法与成员补充">方法与成员补充</h3>
+<table>
+<thead>
+<tr>
+<th>中文</th>
+<th>英文</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>绝对定量</td>
+<td>Absolute quantification</td>
+<td>相对丰度 × 总量，还原"每克土多少个"（难点 08.1）</td>
+</tr>
+<tr>
+<td>长读长测序</td>
+<td>Long-read (Nanopore/PacBio)</td>
+<td>读长长，利于完整组装 / 真核 / 甲基化</td>
+</tr>
+<tr>
+<td>菌株 / 微多样性</td>
+<td>Strain / microdiversity</td>
+<td>种内细胞间差异（SNV）；功能常在株级</td>
+</tr>
+<tr>
+<td>泛基因组</td>
+<td>Pan-genome</td>
+<td>一个种的核心 + 附属基因总集</td>
+</tr>
+<tr>
+<td>培养组学</td>
+<td>Culturomics</td>
+<td>系统化大规模培养，与宏基因组互补</td>
+</tr>
+<tr>
+<td>原生生物</td>
+<td>Protist</td>
+<td>真核单细胞，细菌的主要捕食者、微食物网枢纽</td>
+</tr>
+<tr>
+<td>氨氧化古菌</td>
+<td>AOA</td>
+<td>硝化作用第一步的关键古菌</td>
+</tr>
+<tr>
+<td>非靶向 / 靶向</td>
+<td>Untargeted / Targeted</td>
+<td>广撒网发现 vs 盯已知精确定量</td>
+</tr>
+<tr>
+<td>质谱成像</td>
+<td>MSI</td>
+<td>在组织/土壤切片上看代谢物的空间分布</td>
+</tr>
+<tr>
+<td>Hi-C 邻近连接</td>
+<td>Hi-C proximity ligation</td>
+<td>用物理接触把碎片归到同一个细胞（10.2）</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h2 id="几个最常被误解的点小白避坑">🔑 几个最常被误解的点（小白避坑）</h2>
 <ol>
@@ -4121,6 +4293,12 @@ tmux attach -t job   # 下次回来重新接上
 <td>模型 11、12</td>
 <td>名词多，几何直觉缺失</td>
 </tr>
+<tr>
+<td><strong><code>05-relicDNA与休眠-测到的DNA不等于活菌.md</code></strong></td>
+<td>为什么"测到 DNA"≠活菌：relic DNA 与休眠、清醒度阶梯</td>
+<td>框架3、原理1</td>
+<td>反直觉，最易被忽略</td>
+</tr>
 </tbody>
 </table>
 <hr />
@@ -4137,6 +4315,7 @@ tmux attach -t job   # 下次回来重新接上
 <li><strong>组装/分箱</strong>：组装靠"碎片边缘重叠的字"接龙；分箱靠"文风像 + 在各样本里同进同退"把段落归回各自的书。</li>
 <li><strong>βNTI/RCbray</strong>：先假设"纯随机"会长啥样，再看真实数据偏离随机多远——偏得多=环境在筛选，偏得少=运气主导。</li>
 <li><strong>多样性/排序</strong>：α=一个样本内部多不多样；β=样本两两差多少；PCoA=把"两两差多少"这张大表压成一张能用眼睛看的散点图。</li>
+<li><strong>relic DNA/休眠</strong>：你提的"总 DNA"混着死的、睡的、醒的——<strong>测到≠活着</strong>。土壤约 40% DNA 来自死细胞，会高估多样性；要看"活性"得靠 RNA/qSIP。</li>
 </ol>
 <hr />
 <p>➡️ 从最容易踩坑的开始：<strong><code>01-组成型数据与CLR.md</code></strong></p>
@@ -4708,6 +4887,124 @@ Simpson(q=2) 主要看“优势种”格局    几乎忽视稀有种
 </blockquote>
 <p>➡️ 回到 <strong><code>08 难点图解总览</code></strong> ｜ 想要速查卡：<strong><code>../09-速记卡片与速查图.md</code></strong></p>
 </section><section class="chapter" id="chap-26">
+<h1 id="085-图解测到的-dna-活菌relic-dna-与休眠">08.5 · 图解：测到的 DNA ≠ 活菌（relic DNA 与休眠）</h1>
+<blockquote>
+<p>这是和 <strong>组成型数据</strong> <strong>并列</strong>的、"读 DNA"范式的<strong>另一个根本坑</strong>。组成型坑的是"<strong>数量</strong>"（比例≠数量）；这个坑的是"<strong>死活</strong>"（测到≠活着）。读完你会多一条最容易被忽略、却能颠覆结论的判断护栏。</p>
+</blockquote>
+<hr />
+<h2 id="一问题你提的总-dna混着死的睡着的醒着的">一、问题：你提的"总 DNA"，混着死的、睡着的、醒着的</h2>
+<p>从土里提取的 DNA，<strong>不只来自正在干活的微生物</strong>：</p>
+<pre><code>你提取的“总 DNA”  =  活跃菌 DNA  +  休眠菌 DNA  +  死细胞残留 DNA（relic DNA）
+                     （在干活）      （活着但没动）    （主人早就死了）
+</code></pre>
+<ul>
+<li><strong>relic DNA（遗留 / 胞外 DNA）</strong>：细胞死后，DNA <strong>不会立刻降解</strong>——土壤的矿物、有机质会把它<strong>吸附、保护</strong>起来，能留存<strong>数周到数年</strong>。</li>
+<li><strong>休眠（dormancy）</strong>：细胞<strong>活着，但在"睡觉"</strong>，不生长、不代谢。土壤里<strong>大多数</strong>微生物其实长期处于休眠（构成"<strong>微生物种子库</strong>"）。</li>
+<li>而测序对这三者<strong>一视同仁</strong>——它只读到 A/T/C/G 字符串，<strong>根本不知道主人是死是活、是醒是睡</strong>。</li>
+</ul>
+<blockquote>
+<p>😱 <strong>一个让人警醒的数字</strong>：研究发现土壤里<strong>平均约 40%</strong> 的原核与真菌 DNA 是<strong>胞外的 / 来自已破裂的细胞</strong>（relic DNA）——它能让你观测到的物种丰富度<strong>虚高达 55%</strong>（Carini et al. 2017）。</p>
+</blockquote>
+<hr />
+<h2 id="二后果它会把你引向哪些错误结论">二、后果：它会把你引向哪些错误结论</h2>
+<table>
+<thead>
+<tr>
+<th>你以为</th>
+<th>真相</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"测到 1000 个物种 → 这片土有 1000 个物种"</td>
+<td>其中可能<strong>几百个早就死了</strong>，只是 DNA 还赖着没走 → <strong>高估多样性</strong></td>
+</tr>
+<tr>
+<td>"A 菌丰度最高 → A 最重要/最活跃"</td>
+<td>可能只是 A <strong>死得多、DNA 留得久</strong> → <strong>错判活跃者</strong></td>
+</tr>
+<tr>
+<td>"施肥组和对照群落差异显著"</td>
+<td>部分差异可能来自<strong>死菌 DNA 的背景噪声</strong>，而非活菌的真实响应 → <strong>掩盖/夸大处理效应</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔑 这是比 <strong>框架3</strong> <strong>更靠前</strong>的一层坑：
+- 框架3 说的是"<strong>有基因 ≠ 在表达</strong>"（潜力≠活性）；
+- relic DNA 说的是"<strong>测到 ≠ 还活着</strong>"——连"这个基因属于一个活菌"都不一定成立。</p>
+</blockquote>
+<hr />
+<h2 id="三一条清醒度阶梯把这些坑串成一条线">三、一条"清醒度阶梯"：把这些坑串成一条线</h2>
+<p>把全库散落的"≠"护栏，沿着"越来越接近真的在干活"排成一条阶梯，你就彻底通透了：</p>
+<pre><code>   测到 DNA              ← 可能是死细胞残留的 relic DNA      （本篇）
+     └ 来自活菌           ← 但可能在休眠、没在动             （本篇）
+         └ 有这个基因      ← 潜力，未必在表达                 （框架3）
+             └ 在转录 RNA   ← 活性                            （宏转录组 11.3）
+                 └ 真造出蛋白/产物 ← 通量、真结果              （蛋白组/代谢组 11.6、qSIP 10.3）
+</code></pre>
+<blockquote>
+<p>每往下一级，才更接近"<strong>真的在干活</strong>"。<strong>relic DNA 和休眠，是这条阶梯最顶上、也最容易被一步跳过的两级。</strong></p>
+</blockquote>
+<hr />
+<h2 id="四怎么办思路不讲操作">四、怎么办（思路，不讲操作）</h2>
+<ul>
+<li><strong>意识先行</strong>：解读多样性/丰度前，先问一句"<strong>这里面有多少可能是死的？</strong>"——<strong>低生物量、扰动后、刚加了大量有机物</strong>的样本尤其危险；</li>
+<li><strong>只测活的</strong>：<strong>PMA（叠氮溴化丙锭）</strong>这类染料能钻进<strong>死细胞</strong>、结合其 DNA 并阻止它被扩增/测序——相当于"<strong>只保留活菌信号</strong>"（知道有这工具即可）；</li>
+<li><strong>换个分子层</strong>：测 <strong>RNA（宏转录组）</strong> 或用 <strong>qSIP 同位素</strong>（<strong>10.3</strong>）——直接抓"在表达 / 在生长"的，<strong>天然绕开死菌</strong>；</li>
+<li><strong>对比验证</strong>：把 <strong>DNA 与 RNA/PMA 的结果对照</strong>，差异大的地方，往往就是 relic DNA / 休眠在作怪。</li>
+</ul>
+<hr />
+<h2 id="五判断力护栏">五、判断力护栏</h2>
+<table>
+<thead>
+<tr>
+<th>护栏</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>测到 ≠ 活菌</strong></td>
+<td>总 DNA 含死细胞残留（relic DNA），会高估多样性</td>
+</tr>
+<tr>
+<td><strong>丰度高 ≠ 最活跃</strong></td>
+<td>可能只是死得多、DNA 留得久</td>
+</tr>
+<tr>
+<td><strong>低生物量样本尤其危险</strong></td>
+<td>relic DNA 占比相对更高、更易误导</td>
+</tr>
+<tr>
+<td><strong>要"活性"就别只靠 DNA</strong></td>
+<td>上 RNA / PMA / qSIP</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="六对你固碳-施肥的具体提醒">六、对你（固碳 / 施肥）的具体提醒</h2>
+<ul>
+<li>加大量有机物 / 秸秆后，会有一批微生物<strong>快速繁殖又快速死亡</strong> → 同时产生大量 <strong>relic DNA</strong>（分析干扰）和大量 <strong>坏死体</strong>（<strong>14.3</strong> 的固碳好事）；</li>
+<li>比较施肥处理的"群落差异"时，<strong>部分差异可能来自死菌 DNA 而非活跃响应</strong>——想坐实"活跃响应"，请配 RNA 或 qSIP；</li>
+<li>🔑 顺手帮你把两个易混的概念<strong>切开</strong>：同样是"死菌的 DNA / 残体"——</li>
+<li><strong>坏死体（necromass）</strong> 是你<strong>固碳研究的科学对象</strong>（碳的稳定去向）；</li>
+<li><strong>relic DNA</strong> 是你<strong>群落分析里的干扰项</strong>（要警惕的噪声）。</li>
+<li><strong>别把这两件事混为一谈。</strong></li>
+</ul>
+<blockquote>
+<p>✅ <strong>本篇要义</strong>：测序读到的是"<strong>曾经存在过的 DNA</strong>"，不是"<strong>此刻活跃的群落</strong>"。土壤里约四成 DNA 来自死细胞、大多数活菌还在休眠——所以"测到"离"在干活"隔着两道坎。记住这条"清醒度阶梯"，你对任何多样性/丰度结论都会多一分清醒。</p>
+</blockquote>
+<hr />
+<h2 id="延伸阅读">📚 延伸阅读</h2>
+<ul>
+<li>Relic DNA 在土壤中大量存在、扭曲微生物多样性估计（经典） · <em>Nature Microbiology</em> 2017 · https://www.nature.com/articles/nmicrobiol2016242</li>
+<li>relic DNA 对细菌群落组成与类群动态估计的影响 · <em>Appl Microbiol Biotechnol</em> 2023 · https://link.springer.com/article/10.1007/s00253-023-12576-3</li>
+<li>微生物种子库：休眠的生态与进化意义（休眠经典综述） · <em>Nature Reviews Microbiology</em> 2011 · https://www.nature.com/articles/nrmicro2504</li>
+</ul>
+<hr />
+<p>⬅️ 返回 <strong>模块08 总览</strong> ｜ 另一根本坑 → <strong><code>01-组成型数据与CLR.md</code></strong> ｜ 潜力≠活性 → <strong><code>../03-思维框架.md</code></strong> ｜ 测活性 → <strong><code>../10-前沿模型与方法/03-从基因潜力到活性与互作.md</code></strong></p>
+</section><section class="chapter" id="chap-27">
 <h1 id="09-速记卡片与速查图">09 · 速记卡片与速查图</h1>
 <blockquote>
 <p>把最常用的<strong>阈值、流程、工具、基因、口诀</strong>做成一张张"看一眼就懂"的卡片。
@@ -5159,13 +5456,14 @@ Simpson(q=2) 主要看“优势种”格局    几乎忽视稀有种
 ❌ 比例直接做t检验/相关        → ✅ ALDEx2/SparCC(模型14/17)
 ❌ 忘了去宿主                 → ✅ 否则&quot;土里全是植物基因&quot;
 ❌ 不控批次效应              → ✅ 处理打散到各批次(框架6)
+❌ 把&quot;测到的DNA&quot;当活菌群落    → ✅ 含死菌relic DNA(~40%)，活性看RNA/qSIP(图解08.5)
 </code></pre>
 <hr />
 <blockquote>
 <p>🌱 这张卡片集是"压缩包"。看不懂某条，就点链接去对应章节"解压"。<strong>先求会查，再求会用，最后求会判断。</strong></p>
 </blockquote>
 <p>⬅️ 回到 <strong>知识库总览</strong></p>
-</section><section class="chapter" id="chap-27">
+</section><section class="chapter" id="chap-28">
 <h1 id="10-前沿模型与方法-总览">10 · 前沿模型与方法 · 总览</h1>
 <blockquote>
 <p>💡 <strong>思路 &amp; 可能性</strong>：前沿的本质不是"更难的技术"，而是"<strong>借别的领域的力</strong>"（AI / 物理 Hi-C / 化学同位素 / 系统论）。<strong>思路上</strong>——每个前沿都在补基础篇做不到的某一点；<strong>可能性上</strong>——它们正把领域推向"照亮暗物质、看清活性与真实互作"的新边界。</p>
@@ -5274,7 +5572,7 @@ Simpson(q=2) 主要看“优势种”格局    几乎忽视稀有种
 <p>一句话：<strong>从"谁在"→"谁能"→"谁在干"→"谁和谁怎么干"→"AI 看懂并预测"。</strong></p>
 <hr />
 <p>➡️ 从最热的开始：<strong><code>01-AI与基础模型.md</code></strong></p>
-</section><section class="chapter" id="chap-28">
+</section><section class="chapter" id="chap-29">
 <h1 id="101-ai-与基础模型用人工智能照亮暗物质">10.1 · AI 与基础模型：用人工智能照亮"暗物质"</h1>
 <blockquote>
 <p><strong>他山之石 = 人工智能 / 深度学习。</strong> 这是宏基因组最火的前沿。
@@ -5379,7 +5677,7 @@ Simpson(q=2) 主要看“优势种”格局    几乎忽视稀有种
 <li>"机器学习中的人为上限"：用土壤微生物组预测马铃薯产量与病害 · https://pubmed.ncbi.nlm.nih.gov/39592933/</li>
 </ul>
 <p>➡️ 下一前沿：<strong><code>02-Hi-C邻近连接与病毒组.md</code></strong></p>
-</section><section class="chapter" id="chap-29">
+</section><section class="chapter" id="chap-30">
 <h1 id="102-hi-c-邻近连接-与-病毒组">10.2 · Hi-C 邻近连接 与 病毒组</h1>
 <blockquote>
 <p>两个前沿放一篇，因为它们都在补"<strong>归属</strong>"的短板：Hi-C 帮你把碎片(尤其质粒/噬菌体)归到<strong>正确的细胞</strong>；病毒组+CRISPR 帮你把病毒归到<strong>它感染的宿主</strong>。
@@ -5485,7 +5783,7 @@ Hi-C：① 先用化学“胶水”把细胞内物理上靠近的 DNA 片段“�
 <li>VIRE：行星尺度病毒组资源 · Nucleic Acids Research · https://academic.oup.com/nar/article/54/D1/D902/8356007</li>
 </ul>
 <p>➡️ 下一前沿：<strong><code>03-从基因潜力到活性与互作.md</code></strong></p>
-</section><section class="chapter" id="chap-30">
+</section><section class="chapter" id="chap-31">
 <h1 id="103-从基因潜力到活性与互作">10.3 · 从"基因潜力"到"活性与互作"</h1>
 <blockquote>
 <p>这一篇直击全库最核心的两条遗憾：
@@ -5634,7 +5932,7 @@ Hi-C：① 先用化学“胶水”把细胞内物理上靠近的 DNA 片段“�
 <li>自动化重建群落代谢模型的比较 · npj Systems Biology 2024 · https://www.nature.com/articles/s41540-024-00384-y</li>
 </ul>
 <p>➡️ 回到 <strong>模块10总览</strong> ｜ 升维到整合思想：<strong><code>../11-多组学整合与他山之石/README.md</code></strong></p>
-</section><section class="chapter" id="chap-31">
+</section><section class="chapter" id="chap-32">
 <h1 id="104-培养组学复兴从读-dna回到养出来">10.4 · 培养组学复兴：从"读 DNA"回到"养出来"</h1>
 <blockquote>
 <p>💡 <strong>思路 &amp; 可能性</strong>：全库的起点是"<strong>养不活 → 只能读 DNA</strong>"。但这个故事有<strong>下半场</strong>——近年"<strong>培养组学（culturomics）</strong>"强势回归，而且这次它<strong>和宏基因组联手</strong>。这一篇讲：为什么又要养、宏基因组怎么"指导"培养、养出来能打开什么。</p>
@@ -5744,7 +6042,7 @@ Hi-C：① 先用化学“胶水”把细胞内物理上靠近的 DNA 片段“�
 </ul>
 <hr />
 <p>⬅️ 返回 <strong>模块10 总览</strong> ｜ 起点对照 → <strong><code>../01-第一性原理.md</code></strong> ｜ 下一篇 → <strong><code>05-菌株水平与微多样性.md</code></strong></p>
-</section><section class="chapter" id="chap-32">
+</section><section class="chapter" id="chap-33">
 <h1 id="105-菌株水平与微多样性同一个种里的大不同">10.5 · 菌株水平与微多样性：同一个"种"里的大不同</h1>
 <blockquote>
 <p>💡 <strong>思路 &amp; 可能性</strong>：前面讲到"<strong>种</strong>"基本就停了。但同一个种里，不同"<strong>株（strain）</strong>"的功能可能<strong>天差地别</strong>——致病与否、抗药与否、能不能降解某物质，常常是<strong>株级</strong>差异。这一篇讲：为什么要钻到株、宏基因组怎么钻、能打开什么。</p>
@@ -5840,7 +6138,7 @@ Hi-C：① 先用化学“胶水”把细胞内物理上靠近的 DNA 片段“�
 </ul>
 <hr />
 <p>⬅️ 返回 <strong>模块10 总览</strong> ｜ 上一篇 → <strong><code>04-培养组学复兴.md</code></strong> ｜ 组装分箱基础 → <strong><code>../08-难点图解/02-组装与分箱.md</code></strong></p>
-</section><section class="chapter" id="chap-33">
+</section><section class="chapter" id="chap-34">
 <h1 id="11-多组学整合-与-他山之石-总览">11 · 多组学整合 与 他山之石 · 总览</h1>
 <blockquote>
 <p>💡 <strong>思路 &amp; 可能性</strong>：核心思路是"<strong>宏基因组是地基，不是简化版</strong>"——往上叠组学层（RNA→蛋白→代谢物）、向外借方法（其它生态系统/学科）。<strong>可能性上</strong>——这决定了你能不能从"潜力"爬到"活性与因果"、能不能做出有格局的大研究。</p>
@@ -5934,7 +6232,7 @@ Hi-C：① 先用化学“胶水”把细胞内物理上靠近的 DNA 片段“�
 </code></pre>
 <hr />
 <p>➡️ 先把"地基"在大厦里的位置看清：<strong><code>01-组学阶梯与多组学整合.md</code></strong></p>
-</section><section class="chapter" id="chap-34">
+</section><section class="chapter" id="chap-35">
 <h1 id="111-组学阶梯与多组学整合">11.1 · 组学阶梯与多组学整合</h1>
 <blockquote>
 <p>正面讲透你的问题：<strong>宏基因组在所有"组学"里到底是什么地位？为什么说它是地基不是简化版？怎么往上叠出完整图景？</strong></p>
@@ -6070,7 +6368,7 @@ Hi-C：① 先用化学“胶水”把细胞内物理上靠近的 DNA 片段“�
 <li>用 meta-omics 解析生物地球化学(观点) · EGUsphere 2025 · https://egusphere.copernicus.org/preprints/2025/egusphere-2025-1716/egusphere-2025-1716.pdf</li>
 </ul>
 <p>➡️ 下一篇：<strong><code>02-他山之石.md</code></strong>——向别的领域借智慧</p>
-</section><section class="chapter" id="chap-35">
+</section><section class="chapter" id="chap-36">
 <h1 id="112-他山之石向别的领域借智慧">11.2 · 他山之石：向别的领域借智慧</h1>
 <blockquote>
 <p>"<strong>他山之石，可以攻玉</strong>"——别人山上的石头，能用来打磨自己的玉。
@@ -6211,7 +6509,7 @@ Hi-C：① 先用化学“胶水”把细胞内物理上靠近的 DNA 片段“�
 <li>微生物组精准(医学)：多组学 + 机器学习 · https://www.sciencedirect.com/science/article/abs/pii/S094450132500343X</li>
 </ul>
 <p>⬅️ 回到 <strong>模块11总览</strong> ｜ <strong>知识库总览</strong></p>
-</section><section class="chapter" id="chap-36">
+</section><section class="chapter" id="chap-37">
 <h1 id="113-各类组学详解宏基因组的楼上邻居们">11.3 · 各类组学详解：宏基因组的"楼上邻居"们</h1>
 <blockquote>
 <p>上一篇(<strong>01</strong>)给了组学阶梯的<strong>全景</strong>。这一篇把宏基因组<strong>楼上的每一层</strong>逐一拆开讲清楚：它测什么、和宏基因组怎么配合、难在哪。
@@ -6334,7 +6632,7 @@ Hi-C：① 先用化学“胶水”把细胞内物理上靠近的 DNA 片段“�
 <li>用甲基化模式解析异常大小/复杂结构的细菌基因组 · ISME J · https://www.nature.com/articles/s41396-022-01242-7</li>
 </ul>
 <p>➡️ 下一篇：<strong><code>04-从组学领域借方法.md</code></strong>——把成熟组学的利器搬过来</p>
-</section><section class="chapter" id="chap-37">
+</section><section class="chapter" id="chap-38">
 <h1 id="114-从组学领域借方法最该借的他山之石">11.4 · 从组学领域借方法：最该借的"他山之石"</h1>
 <blockquote>
 <p>这是你要的"<strong>能在组学借鉴的</strong>"。最该借的"他山"，恰恰是<strong>其它更成熟的组学领域</strong>——人类基因组学、单细胞组学、空间组学。它们烧了更多钱、趟了更多坑，方法成熟，<strong>很多能直接搬到土壤宏基因组来用</strong>。</p>
@@ -6475,7 +6773,7 @@ MWAS：  微生物的基因/物种丰度 ──关联──►  疾病 / 土壤�
 <li>微米尺度空间宏基因组 · bioRxiv 2025 · https://www.biorxiv.org/content/10.1101/2025.09.30.679663.full.pdf</li>
 </ul>
 <p>➡️ 下一篇：<strong><code>05-他山之石进阶.md</code></strong>——更多生态系统与跨学科借鉴</p>
-</section><section class="chapter" id="chap-38">
+</section><section class="chapter" id="chap-39">
 <h1 id="115-他山之石进阶更多生态系统与跨学科">11.5 · 他山之石进阶：更多生态系统与跨学科</h1>
 <blockquote>
 <p><strong>02 篇</strong>起了个头(海洋/肠道 + 生态学/网络/系统生物学/AI)，<strong>04 篇</strong>讲了从兄弟组学借方法。这一篇把"他山"的版图<strong>进一步扩大</strong>：更多可借经验的<strong>生态系统</strong>，以及更多能贡献思想的<strong>学科</strong>。</p>
@@ -6567,7 +6865,7 @@ MWAS：  微生物的基因/物种丰度 ──关联──►  疾病 / 土壤�
 <li>用机器学习与组学解析土壤 C/N/P 循环的环境调控 · JGR Biogeosciences 2025 · https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2024JG008470</li>
 </ul>
 <p>⬅️ 回到 <strong>模块11总览</strong> ｜ <strong>知识库总览</strong></p>
-</section><section class="chapter" id="chap-39">
+</section><section class="chapter" id="chap-40">
 <h1 id="116-代谢组学深入从产出端读懂土壤里到底发生了什么">11.6 · 代谢组学深入：从"产出端"读懂土壤里到底发生了什么</h1>
 <blockquote>
 <p>💡 <strong>思路 &amp; 可能性</strong>：<strong><code>03-各类组学详解</code></strong> 把代谢组放在阶梯顶端、一节带过。但它是离"<strong>固碳、养分转化到底发生了什么</strong>"<strong>最近的一层</strong>，也是你最可能真正用到的"楼上"组学——所以单开一篇讲透。</p>
@@ -6877,7 +7175,7 @@ MWAS：  微生物的基因/物种丰度 ──关联──►  疾病 / 土壤�
 - MetaboLights https://www.ebi.ac.uk/metabolights/ · Metabolomics Workbench https://www.metabolomicsworkbench.org/</p>
 <hr />
 <p>⬅️ 返回 <strong>模块11 总览</strong> ｜ 上一层组学详解 → <strong><code>03-各类组学详解.md</code></strong> ｜ 整合因果链 → <strong><code>01-组学阶梯与多组学整合.md</code></strong></p>
-</section><section class="chapter" id="chap-40">
+</section><section class="chapter" id="chap-41">
 <h1 id="117-被忽略的成员真菌古菌原生生物与土壤食物网">11.7 · 被忽略的成员：真菌、古菌、原生生物与土壤食物网</h1>
 <blockquote>
 <p>💡 <strong>思路 &amp; 可能性</strong>：前面几乎默认"宏基因组 = 测细菌"。但土壤里还有<strong>真菌、古菌、原生生物</strong>——它们对固碳和养分循环常常<strong>比细菌更关键</strong>（真菌坏死体是稳定碳的主力！），却因为方法天生偏向细菌而被<strong>系统性低估</strong>。这一篇补上"全貌里被忽略的半边"。</p>
@@ -6989,7 +7287,7 @@ MWAS：  微生物的基因/物种丰度 ──关联──►  疾病 / 土壤�
 </ul>
 <hr />
 <p>⬅️ 返回 <strong>模块11 总览</strong> ｜ 各层组学 → <strong><code>03-各类组学详解.md</code></strong> ｜ 病毒成员 → <strong><code>../10-前沿模型与方法/02-Hi-C邻近连接与病毒组.md</code></strong></p>
-</section><section class="chapter" id="chap-41">
+</section><section class="chapter" id="chap-42">
 <h1 id="12-自测与练习-总览">12 · 自测与练习 · 总览</h1>
 <blockquote>
 <p>前面 00–11 是"<strong>教</strong>"，这个模块是"<strong>考</strong>"。
@@ -7079,7 +7377,7 @@ MWAS：  微生物的基因/物种丰度 ──关联──►  疾病 / 土壤�
 </table>
 <hr />
 <p>➡️ 从第一套开始：<strong><code>01-基础概念自测.md</code></strong></p>
-</section><section class="chapter" id="chap-42">
+</section><section class="chapter" id="chap-43">
 <h1 id="自测-01-基础概念">自测 01 · 基础概念</h1>
 <blockquote>
 <p>覆盖：00 零基础启蒙、01 第一性原理、模型 1–4、思维框架。
@@ -7146,7 +7444,7 @@ D. 1/300</p>
 - （加分）<strong>相关≠因果</strong>：即使差异真实，也只是"相关"，不能直接说"施肥<strong>提高</strong>了多样性"，需更多证据（思维框架 7）。</p>
 <hr />
 <p>➡️ 下一套：<strong><code>02-分析与统计自测.md</code></strong></p>
-</section><section class="chapter" id="chap-43">
+</section><section class="chapter" id="chap-44">
 <h1 id="自测-02-分析与统计">自测 02 · 分析与统计</h1>
 <blockquote>
 <p>覆盖：模型 5–14、07 实操教程、08 难点图解（CLR / 多样性 / 组装分箱）。
@@ -7227,7 +7525,7 @@ D. 丢弃</p>
 三个一起看，才能区分"差异到底出在稀有种还是优势种"，只报一个会把它们混淆（模型 11、图解 08.4）。</p>
 <hr />
 <p>➡️ 下一套：<strong><code>03-生态与功能自测.md</code></strong></p>
-</section><section class="chapter" id="chap-44">
+</section><section class="chapter" id="chap-45">
 <h1 id="自测-03-生态与功能">自测 03 · 生态与功能</h1>
 <blockquote>
 <p>覆盖：模型 15–20、思维框架 4/7、10 前沿、11 多组学与他山之石。
@@ -7305,7 +7603,7 @@ D. 材料学</p>
 （核心：相关→因果必须靠实验，思维框架 7；植物系统是做因果验证的好模型，文件 11.5）</p>
 <hr />
 <p>➡️ 最后一套（最有价值）：<strong><code>04-纠错与案例分析.md</code></strong></p>
-</section><section class="chapter" id="chap-45">
+</section><section class="chapter" id="chap-46">
 <h1 id="自测-04-纠错与案例分析">自测 04 · 纠错与案例分析 ⭐</h1>
 <blockquote>
 <p>这是最像"真功夫"的一套。下面每段话<strong>听起来都挺像那么回事，其实都埋了坑</strong>。你的任务：<strong>把坑找出来、说清为什么错、怎么改</strong>。
@@ -7400,7 +7698,7 @@ D. 材料学</p>
 <p>学习不是一次通关，是螺旋上升。你能读到这里、做到这里，已经从"小白"迈进"入门"了。🌱</p>
 </blockquote>
 <p>⬅️ <strong>知识库总览</strong></p>
-</section><section class="chapter" id="chap-46">
+</section><section class="chapter" id="chap-47">
 <h1 id="13-资源导航与优质教程站在巨人肩上">13 · 资源导航与优质教程（站在巨人肩上）</h1>
 <blockquote>
 <p><strong>不要重复造轮子。</strong> 社区里已经有大量高质量、免费、持续维护的教程、流程、数据库和综述。本篇把它们<strong>挑出来、做成带评价的导航</strong>：每个都标注「<strong>是什么 / 适合谁 / 何时用 / 和本库哪块互补</strong>」。</p>
@@ -7656,7 +7954,7 @@ D. 材料学</p>
 <li><strong>查数据库</strong> → GTDB / KEGG / eggNOG / CAZy / CARD</li>
 </ul>
 <p>⬅️ 回到 <strong>知识库总览</strong> ｜ 术语速查见 <strong><code>06-术语表与延伸阅读.md</code></strong></p>
-</section><section class="chapter" id="chap-47">
+</section><section class="chapter" id="chap-48">
 <h1 id="14-专题土壤养分循环-与-施肥有机物添加">14 · 专题：土壤养分循环 与 施肥/有机物添加</h1>
 <blockquote>
 <p>💡 <strong>思路 &amp; 可能性</strong>：核心思路是"<strong>微生物驱动 C/N/P 循环，而化学计量平衡是固碳与增产的共同钥匙</strong>"。<strong>可能性上</strong>——这是宏基因组离应用最近的方向之一：理解它，就能理解并尝试调控农田的固碳、减排与增产。</p>
@@ -7726,7 +8024,7 @@ D. 材料学</p>
 </blockquote>
 <hr />
 <p>➡️ 从机制和基因字典开始：<strong><code>01-养分循环的微生物机制与功能基因.md</code></strong></p>
-</section><section class="chapter" id="chap-48">
+</section><section class="chapter" id="chap-49">
 <h1 id="141-养分循环的微生物机制与功能基因基因字典">14.1 · 养分循环的微生物机制与功能基因（基因字典）</h1>
 <blockquote>
 <p>这一篇是你的"<strong>循环基因字典</strong>"。把碳、氮、磷、硫循环的每一步，对应到<strong>做这件事的微生物 + 标志基因</strong>。
@@ -7969,7 +8267,7 @@ D. 材料学</p>
 <li>有机/无机管理对土壤磷循环的宏基因组洞见 · https://www.sciencedirect.com/science/article/abs/pii/S0167880922004303</li>
 </ul>
 <p>➡️ 下一篇：<strong><code>02-化肥与有机物添加的微生物效应.md</code></strong></p>
-</section><section class="chapter" id="chap-49">
+</section><section class="chapter" id="chap-50">
 <h1 id="142-化肥与有机物添加的微生物效应">14.2 · 化肥与有机物添加的微生物效应</h1>
 <blockquote>
 <p>上一篇是"基因字典"，这一篇回答：<strong>不同的施肥/加料方式，分别怎么改变微生物群落和这些功能基因？</strong>
@@ -8154,7 +8452,7 @@ D. 材料学</p>
 <li>黑土区长期化肥/有机肥下碳氮循环功能分化 · https://www.sciencedirect.com/science/article/abs/pii/S0016706122001537</li>
 </ul>
 <p>➡️ 下一篇：<strong><code>03-有机碳固存与激发效应.md</code></strong></p>
-</section><section class="chapter" id="chap-50">
+</section><section class="chapter" id="chap-51">
 <h1 id="143-有机碳固存与激发效应有机物添加的灵魂机制">14.3 · 有机碳固存与激发效应（有机物添加的灵魂机制）</h1>
 <blockquote>
 <p>往土里加有机物（秸秆、粪肥），碳到底是<strong>被存住了</strong>还是<strong>被分解跑掉了</strong>？这一篇讲清两个核心机制：<strong>微生物碳泵（怎么存）</strong> 和 <strong>激发效应（怎么可能反而丢）</strong>。
@@ -8248,7 +8546,7 @@ D. 材料学</p>
 <li>激发效应：不同碳底物对 SOM 分解的影响 · https://link.springer.com/article/10.1007/s11368-018-2103-3</li>
 </ul>
 <p>➡️ 下一篇（最实用）：<strong><code>04-研究设计与分析方案.md</code></strong></p>
-</section><section class="chapter" id="chap-51">
+</section><section class="chapter" id="chap-52">
 <h1 id="144-研究设计与分析方案可照做的蓝图">14.4 · 研究设计与分析方案（可照做的蓝图）⭐</h1>
 <blockquote>
 <p>这是专题的落地篇：把前三篇的知识，串成一套<strong>从科学问题到结论的完整流程</strong>，你可以照着改成自己的方案。
@@ -8449,7 +8747,7 @@ D. 材料学</p>
 <li>中文一体化流程 EasyMetagenome（照着跑）· https://github.com/YongxinLiu/EasyMetagenome</li>
 </ul>
 <p>⬅️ 回到 <strong>专题总览</strong> ｜ <strong>知识库总览</strong></p>
-</section><section class="chapter" id="chap-52">
+</section><section class="chapter" id="chap-53">
 <h1 id="145-化学计量比视角把固碳和增产统一起来">14.5 · 化学计量比视角：把"固碳"和"增产"统一起来</h1>
 <blockquote>
 <p>你的方向聚焦到了<strong>农田土壤 · 固碳 · 增产 · 化学计量比</strong>。这一篇告诉你：<strong>生态化学计量学（C:N:P 平衡）是同时理解"固碳"和"增产"的一把钥匙</strong>——它能解释"为什么加碳不一定固碳""为什么养分失衡既限产又减碳"。</p>
@@ -8609,7 +8907,7 @@ CUE              高                                  低
 <li>全球农田 SOC 阈值控制施肥的固碳效应 · https://pmc.ncbi.nlm.nih.gov/articles/PMC11950326/</li>
 </ul>
 <p>⬅️ 回到 <strong>专题总览</strong> ｜ <strong>知识库总览</strong></p>
-</section><section class="chapter" id="chap-53">
+</section><section class="chapter" id="chap-54">
 <h1 id="146-全球视角与跨体系综合">14.6 · 全球视角与跨体系综合</h1>
 <blockquote>
 <p>前面几篇讲机制和单个研究。但你关心的"农田固碳增产"是个<strong>大尺度普适问题</strong>——它的答案不能靠一块地、一篇文章，而要靠<strong>全球范围、跨作物、跨气候的综合（meta 分析）</strong>。
@@ -8749,7 +9047,7 @@ CUE              高                                  低
 <li>秸秆还田固碳与活性氮损失的权衡(全球) · https://pubmed.ncbi.nlm.nih.gov/30295405/</li>
 </ul>
 <p>⬅️ 回到 <strong>专题总览</strong> ｜ 学怎么用公开数据做综合 → <strong>模块15</strong></p>
-</section><section class="chapter" id="chap-54">
+</section><section class="chapter" id="chap-55">
 <h1 id="15-用好公开数据-与-meta-分析不一定要自己测序">15 · 用好公开数据 与 Meta 分析（不一定要自己测序）</h1>
 <blockquote>
 <p>💡 <strong>思路 &amp; 可能性</strong>：核心思路是"<strong>不必自己测，整合全世界已有的数据</strong>"。<strong>可能性上</strong>——这让没有湿实验室的人，也能做全球尺度、跨体系的大问题，是最被低估的一种能力。（你只想理解的话，看懂这个思路即可，脚本是给要动手时用的。）</p>
@@ -8852,7 +9150,7 @@ CUE              高                                  低
 </blockquote>
 <hr />
 <p>➡️ 从"去哪找、怎么下"开始：<strong><code>01-公开数据从哪来怎么下.md</code></strong></p>
-</section><section class="chapter" id="chap-55">
+</section><section class="chapter" id="chap-56">
 <h1 id="151-公开数据从哪来怎么下">15.1 · 公开数据从哪来、怎么下</h1>
 <blockquote>
 <p>这一篇是"找米下锅"——告诉你<strong>去哪找别人的数据、怎么下载、以及最大的坑（元数据）</strong>。</p>
@@ -8996,7 +9294,7 @@ fasterq-dump --split-files SRR1234567   # 得到双端 fastq
 <li>Terrestrial/Marine/Human MetagenomeDB（整理好的元数据库，按名检索）</li>
 </ul>
 <p>➡️ 下一篇：<strong><code>02-Meta分析方法.md</code></strong></p>
-</section><section class="chapter" id="chap-56">
+</section><section class="chapter" id="chap-57">
 <h1 id="152-meta-分析方法把很多研究合成一个普适结论">15.2 · Meta 分析方法（把很多研究合成一个普适结论）</h1>
 <blockquote>
 <p><strong>Meta 分析（meta-analysis）= 用统计方法把许多独立研究的结果定量合并，得到比单个研究更可靠、更普适的结论。</strong> <strong>14.6</strong> 里那些"全球平均效应"就是这么来的。
@@ -9115,7 +9413,7 @@ res_mod &lt;- rma(yi, vi, mods=~climate+soil_C, data=dat)  # 调节因子(Meta�
 <li>土地利用调节全球变化对土壤微生物影响(分层 Meta) · https://pubmed.ncbi.nlm.nih.gov/38772492/</li>
 </ul>
 <p>➡️ 下一篇：<strong><code>03-公开宏基因组数据再分析.md</code></strong></p>
-</section><section class="chapter" id="chap-57">
+</section><section class="chapter" id="chap-58">
 <h1 id="153-公开宏基因组数据再分析下原始序列统一重算">15.3 · 公开宏基因组数据再分析（下原始序列，统一重算）</h1>
 <blockquote>
 <p>这是"层次2"：不只用别人论文里的数字，而是<strong>把原始测序数据（reads）下载下来，用你自己统一的流程重新分析</strong>。
@@ -9214,7 +9512,7 @@ res_mod &lt;- rma(yi, vi, mods=~climate+soil_C, data=dat)  # 调节因子(Meta�
 <li>宏基因组数据生命周期：标准与最佳实践 · https://academic.oup.com/gigascience/article/6/8/gix047/3869082</li>
 </ul>
 <p>➡️ 下一篇：<strong><code>04-进阶数据再利用.md</code></strong></p>
-</section><section class="chapter" id="chap-58">
+</section><section class="chapter" id="chap-59">
 <h1 id="154-进阶数据再利用多组学-基因目录-mag-库-预测结构">15.4 · 进阶数据再利用（多组学 / 基因目录 / MAG 库 / 预测结构）</h1>
 <blockquote>
 <p>这是"层次3"：除了原始 reads，社区还积累了大量<strong>加工到更高层次的"进阶数据"</strong>——多组学、参考基因目录、海量 MAG、预测的蛋白结构、长期试验网络。学会用它们，能让你<strong>少算、算快、挖得更深</strong>。</p>
@@ -9316,7 +9614,7 @@ res_mod &lt;- rma(yi, vi, mods=~climate+soil_C, data=dat)  # 调节因子(Meta�
 <li>MGnify（分析结果 + 基因组目录）· https://www.ebi.ac.uk/metagenomics</li>
 </ul>
 <p>⬅️ 回到 <strong>模块15总览</strong> ｜ <strong>知识库总览</strong></p>
-</section><section class="chapter" id="chap-59">
+</section><section class="chapter" id="chap-60">
 <h1 id="155-宏基因组指标的提取与-meta-实例带数字走一遍">15.5 · 宏基因组指标的提取与 Meta 实例（带数字走一遍）</h1>
 <blockquote>
 <p>前面 15.2/15.3 讲了"方法框架"。但你做的是<strong>宏基因组</strong>——必须落到"<strong>到底哪些指标、怎么标准化、怎么算效应量、怎么合成</strong>"。这一篇用<strong>真实数字</strong>把整个过程走一遍，专治"道理懂了但不会动手"。</p>
@@ -9547,7 +9845,7 @@ forest(res); funnel(res)                            # 森林图 / 漏斗图
 <li>宏基因组基因丰度标准化方法比较 · https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5910605/</li>
 </ul>
 <p>⬅️ 回到 <strong>模块15总览</strong> ｜ 复习 Meta 方法 <strong>15.2</strong> ｜ 原始数据再分析 <strong>15.3</strong></p>
-</section><section class="chapter" id="chap-60">
+</section><section class="chapter" id="chap-61">
 <h1 id="156-候选公开数据集线索农田施肥养分循环固碳">15.6 · 候选公开数据集线索（农田·施肥·养分循环·固碳）</h1>
 <blockquote>
 <p>这是为你的方向（<strong>农田土壤 · 施肥/有机物 · 养分循环 · 固碳增产</strong>）整理的<strong>起步线索清单</strong>：可下载再分析的原始数据集、可整合的大资源、以及可做 Meta 分析的"数据金矿"论文。</p>
@@ -9705,7 +10003,7 @@ forest(res); funnel(res)                            # 森林图 / 漏斗图
 <li><strong>务必引用数据创造者与原始论文</strong>（学术伦理，<strong>15 模块红线</strong>）。</li>
 </ol>
 <p>⬅️ 回到 <strong>模块15总览</strong> ｜ 怎么提取/合成指标 <strong>15.5</strong></p>
-</section><section class="chapter" id="chap-61">
+</section><section class="chapter" id="chap-62">
 <h1 id="157-实战工具包-与-各候选数据集的具体用法">15.7 · 实战工具包 与 各候选数据集的具体用法</h1>
 <blockquote>
 <p>你说"全部"——所以我把前面所有方法，落成了一套<strong>可直接运行的脚本和模板</strong>（在 <strong><code>工具包/</code></strong>），并给出<strong>针对 </strong>15.6<strong> 各候选数据集的具体打法</strong>。核实编号后即可开跑。</p>
