@@ -53,7 +53,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
   <h1>🦠 土壤宏基因组学</h1>
   <div class="sub">小白系统学习库 · 完整合订本</div>
   <div class="sub">第一性原理 · 20 个必学模型 · 7 个思维框架 · 10 个案例 · 实操教程 · 难点图解 · 前沿与多组学</div>
-  <div class="sub" style="margin-top:18px;font-size:.9em;">共 69 章 · 自动合并生成 · 用浏览器「打印 → 另存为 PDF」即得电子书</div>
+  <div class="sub" style="margin-top:18px;font-size:.9em;">共 70 章 · 自动合并生成 · 用浏览器「打印 → 另存为 PDF」即得电子书</div>
 </div>
 <div class="tocbox"><h2 style="margin-top:0;border:none;">📑 目录</h2>
 <ul class='toc'><li><a href="#chap-1"><b>🦠 土壤宏基因组学 · 小白系统学习库</b></a>
@@ -691,14 +691,27 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读权威争议双方都列">📚 延伸阅读（权威，争议双方都列）</a></li>
 </ul>
 </li>
-<li><a href="#chap-62"><b>15 · 用好公开数据 与 Meta 分析（不一定要自己测序）</b></a>
+<li><a href="#chap-62"><b>14.8 · 课题推演沙盘：从一个固碳增产问题走到结论（全库综合实战）</b></a>
+<ul>
+<li><a href="#选题一个具体真实的问题">🎯 选题（一个具体、真实的问题）</a></li>
+<li><a href="#第-0-步-先问这问题问得好吗框架5假说-vs-数据驱动">第 0 步 · 先问&quot;这问题问得好吗&quot;（框架5：假说 vs 数据驱动）</a></li>
+<li><a href="#第-1-步-研究设计框架6-144-151">第 1 步 · 研究设计（框架6 + 14.4 + 15.1）</a></li>
+<li><a href="#第-2-步-测什么组学阶梯按问题选层-不是越多越好">第 2 步 · 测什么（组学阶梯，按问题选层 —— 不是越多越好）</a></li>
+<li><a href="#第-3-步-分析专挑统计坑避">第 3 步 · 分析（专挑统计坑避）</a></li>
+<li><a href="#第-4-步-解读逐条守护栏">第 4 步 · 解读（逐条守护栏）</a></li>
+<li><a href="#第-5-步-下结论给每句话标可信度等级呼应-125-判读">第 5 步 · 下结论（给每句话标&quot;可信度等级&quot;，呼应 12.5 判读）</a></li>
+<li><a href="#第-6-步-投稿前自审把-125-的10-问清单对自己用一遍">第 6 步 · 投稿前自审（把 12.5 的&quot;10 问清单&quot;对自己用一遍）</a></li>
+<li><a href="#一张图全库如何在这一个课题里串起来">🧭 一张图：全库如何在这一个课题里串起来</a></li>
+</ul>
+</li>
+<li><a href="#chap-63"><b>15 · 用好公开数据 与 Meta 分析（不一定要自己测序）</b></a>
 <ul>
 <li><a href="#一三个层次的数据再利用先分清你要哪种">一、三个层次的数据再利用（先分清你要哪种）</a></li>
 <li><a href="#二本模块内容">二、本模块内容</a></li>
 <li><a href="#三为什么这是事半功倍的能力">三、为什么这是&quot;事半功倍&quot;的能力</a></li>
 </ul>
 </li>
-<li><a href="#chap-63"><b>15.1 · 公开数据从哪来、怎么下</b></a>
+<li><a href="#chap-64"><b>15.1 · 公开数据从哪来、怎么下</b></a>
 <ul>
 <li><a href="#一原始测序数据仓库下-reads-的地方">一、原始测序数据仓库（下 reads 的地方）</a></li>
 <li><a href="#二加工好的高级数据省去自己算">二、加工好的&quot;高级&quot;数据（省去自己算）</a></li>
@@ -709,7 +722,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-64"><b>15.2 · Meta 分析方法（把很多研究合成一个普适结论）</b></a>
+<li><a href="#chap-65"><b>15.2 · Meta 分析方法（把很多研究合成一个普适结论）</b></a>
 <ul>
 <li><a href="#一它解决什么问题为什么需要它">一、它解决什么问题（为什么需要它）</a></li>
 <li><a href="#二标准流程prisma-框架照着走">二、标准流程（PRISMA 框架，照着走）</a></li>
@@ -720,7 +733,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-65"><b>15.3 · 公开宏基因组数据再分析（下原始序列，统一重算）</b></a>
+<li><a href="#chap-66"><b>15.3 · 公开宏基因组数据再分析（下原始序列，统一重算）</b></a>
 <ul>
 <li><a href="#一什么时候该做再分析而不是-meta-分析">一、什么时候该做&quot;再分析&quot;（而不是 Meta 分析）</a></li>
 <li><a href="#二标准流程">二、标准流程</a></li>
@@ -731,7 +744,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-66"><b>15.4 · 进阶数据再利用（多组学 / 基因目录 / MAG 库 / 预测结构）</b></a>
+<li><a href="#chap-67"><b>15.4 · 进阶数据再利用（多组学 / 基因目录 / MAG 库 / 预测结构）</b></a>
 <ul>
 <li><a href="#一有哪些进阶数据可借">一、有哪些&quot;进阶数据&quot;可借</a></li>
 <li><a href="#二几种高价值玩法">二、几种高价值玩法</a></li>
@@ -741,7 +754,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-67"><b>15.5 · 宏基因组指标的提取与 Meta 实例（带数字走一遍）</b></a>
+<li><a href="#chap-68"><b>15.5 · 宏基因组指标的提取与 Meta 实例（带数字走一遍）</b></a>
 <ul>
 <li><a href="#一先搞清能拿来做-meta-整合的宏基因组指标有哪些">一、先搞清：能拿来做 Meta / 整合的&quot;宏基因组指标&quot;有哪些</a></li>
 <li><a href="#二关键难点宏基因组指标的单位五花八门必须先统一理解">二、关键难点：宏基因组指标的&quot;单位&quot;五花八门（必须先统一理解）</a></li>
@@ -753,7 +766,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-68"><b>15.6 · 候选公开数据集线索（农田·施肥·养分循环·固碳）</b></a>
+<li><a href="#chap-69"><b>15.6 · 候选公开数据集线索（农田·施肥·养分循环·固碳）</b></a>
 <ul>
 <li><a href="#一可下载再分析的原始数据集层次2见153">一、可下载再分析的原始数据集（层次2，见15.3）</a></li>
 <li><a href="#二可整合的大型资源层次23做全球跨体系">二、可整合的大型资源（层次2/3，做全球/跨体系）</a></li>
@@ -763,7 +776,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#三条纪律再强调">⚠️ 三条纪律（再强调）</a></li>
 </ul>
 </li>
-<li><a href="#chap-69"><b>15.7 · 实战工具包 与 各候选数据集的具体用法</b></a>
+<li><a href="#chap-70"><b>15.7 · 实战工具包 与 各候选数据集的具体用法</b></a>
 <ul>
 <li><a href="#一工具包里有什么">一、工具包里有什么</a></li>
 <li><a href="#二按候选数据集对号入座核实编号后">二、按候选数据集对号入座（核实编号后）</a></li>
@@ -785,7 +798,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 </ul>
 <blockquote>
 <p>🧭 <strong>只想"看懂思路、了解可能性"、暂不打算动手？</strong> 先读 <strong><code>思路地图 · 灵魂导览</code></strong>——一篇讲通全领域<strong>逻辑链、思维跃迁、可能性与判断力</strong>的导览，不含任何操作。配合 <code>01 第一性原理</code> + <code>03 思维框架</code>，就够你"想通"这个领域。</p>
-<p>📖 <strong>想离线 / 打印通读？</strong> 整本电子书（PDF 320 页 / HTML / Markdown）已生成在 <strong><code>合订本/</code></strong>。</p>
+<p>📖 <strong>想离线 / 打印通读？</strong> 整本电子书（PDF 324 页 / HTML / Markdown）已生成在 <strong><code>合订本/</code></strong>。</p>
 </blockquote>
 <hr />
 <h2 id="学习路线图建议顺序">🗺️ 学习路线图（建议顺序）</h2>
@@ -8744,6 +8757,11 @@ D. 材料学</p>
 <td>固碳<strong>还没定论的 5 场争议</strong>（持久性范式 / 坏死体 vs 木质素 / CUE 测量 / MAOM 饱和 / 深层与全球）</td>
 <td>知道"哪里没定论"= 高级判断力</td>
 </tr>
+<tr>
+<td><strong><code>08-课题推演沙盘.md</code></strong> ⭐</td>
+<td>拿一个固碳增产问题<strong>全程走一遍</strong>：设计→测→析→判→结论，标注全库如何串起来</td>
+<td>全库综合"毕业实战"</td>
+</tr>
 </tbody>
 </table>
 <hr />
@@ -9866,6 +9884,173 @@ CUE              高                                  低
 <hr />
 <p>⬅️ 返回 <strong>模块14 总览</strong> ｜ 固碳机制（共识篇）→ <strong><code>03-有机碳固存与激发效应.md</code></strong> ｜ 固碳论文判读 → <strong><code>../12-自测与练习/07-论文判读实战集-固碳.md</code></strong></p>
 </section><section class="chapter" id="chap-62">
+<h1 id="148-课题推演沙盘从一个固碳增产问题走到结论全库综合实战">14.8 · 课题推演沙盘：从一个固碳增产问题走到结论（全库综合实战）</h1>
+<blockquote>
+<p>💡 <strong>思路 &amp; 可能性</strong>：这是全库的<strong>"毕业实战"</strong>——拿一个<strong>具体</strong>的固碳增产问题，从 科学问题 → 假说 → 设计 → 测什么 → 分析 → 解读 → 结论 <strong>完整走一遍</strong>，并在<strong>每一步标出"用到库里哪个模块、哪条护栏"</strong>。</p>
+<p>它和 <strong>14.4 研究设计与分析方案</strong> 的区别：14.4 是<strong>可照抄的方案模板</strong>；这一篇是<strong>一次"带决策和判断的活推演"</strong>——示范遇到真问题时，这套库怎么串成一条<strong>有判断力的决策链</strong>。纯推演，不落操作命令。</p>
+</blockquote>
+<hr />
+<h2 id="选题一个具体真实的问题">🎯 选题（一个具体、真实的问题）</h2>
+<blockquote>
+<p><strong>"在我这片农田，长期'有机无机配施'比单施化肥，能不能</strong>既增产又固碳<strong>？微生物机制是什么？"</strong></p>
+</blockquote>
+<p>这是你方向上最典型的问题。下面一步步推演。</p>
+<hr />
+<h2 id="第-0-步-先问这问题问得好吗框架5假说-vs-数据驱动">第 0 步 · 先问"这问题问得好吗"（框架5：假说 vs 数据驱动）</h2>
+<p>不要一上来就测序。先把大问题<strong>拆成可检验的假说</strong>：</p>
+<ul>
+<li><strong>H1（固碳链）</strong>：配施 → C:N:P 更平衡 → 微生物 CUE 更高 → 更多坏死体 → 更多 MAOC（<strong>14.5</strong>、<strong>14.3</strong>）。</li>
+<li><strong>H2（增产链）</strong>：配施 → 养分循环功能基因/菌群改变 → 养分供给改善 → 增产。</li>
+<li><strong>定性</strong>：这是<strong>"机制 + 效应"型</strong>问题 → 证据要求高（<strong>框架1</strong> 先定证据天花板：要谈"固碳"就得有<strong>通量级</strong>证据，不能只停在基因）。</li>
+</ul>
+<blockquote>
+<p>🔑 <strong>这一步就决定了成败</strong>：问题拆得清，后面每一步才有靶子。</p>
+</blockquote>
+<hr />
+<h2 id="第-1-步-研究设计框架6-144-151">第 1 步 · 研究设计（框架6 + 14.4 + 15.1）</h2>
+<table>
+<thead>
+<tr>
+<th>设计要素</th>
+<th>决策</th>
+<th>护栏/来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>处理</strong></td>
+<td>CK / 化肥NPK / 有机肥 / 配施（最好带梯度）</td>
+<td>框架6 对照</td>
+</tr>
+<tr>
+<td><strong>重复</strong></td>
+<td>≥3–4 个<strong>真</strong>生物学重复（警惕伪重复）</td>
+<td>框架6；根际判读卡4</td>
+</tr>
+<tr>
+<td><strong>试验</strong></td>
+<td>优先<strong>长期定位试验</strong>（固碳是慢变量，短期看不出）</td>
+<td>固碳争议·时间尺度</td>
+</tr>
+<tr>
+<td><strong>采样深度</strong></td>
+<td><strong>分层</strong>（0–20/20–40/更深）+ <strong>等质量核算</strong></td>
+<td>⚠️固碳判读卡2"只测表土"坑</td>
+</tr>
+<tr>
+<td><strong>保存</strong></td>
+<td>立刻 −80℃/液氮</td>
+<td>模型4</td>
+</tr>
+<tr>
+<td><strong>元数据</strong></td>
+<td>按 <strong>MIxS</strong> 记（经纬/pH/容重/施肥史/气候）</td>
+<td>15.1</td>
+</tr>
+<tr>
+<td><strong>质控对照</strong></td>
+<td>阴性对照（kitome）+ 若做绝对定量加内标/mock</td>
+<td>框架6；难点08.1</td>
+</tr>
+<tr>
+<td><strong>混杂</strong></td>
+<td>处理打散到批次、地块随机化</td>
+<td>框架6 批次效应</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="第-2-步-测什么组学阶梯按问题选层-不是越多越好">第 2 步 · 测什么（组学阶梯，按问题选层 —— 不是越多越好）</h2>
+<pre><code>地基（必测）  宏基因组（鸟枪）── 功能基因“潜力”：CAZy、养分获取基因、CUE相关  （模型2、14.1）
+   │  但“潜力”到不了“固碳量”，所以要往“通量端”加：
+   ├─ 通量端（固碳必加）  SOC组分(MAOC/POC物理分组) + 坏死体(氨基糖) + CUE(¹⁸O*) + ¹³C同位素(因果)
+   └─ 活性端（可选加强）  宏转录组 / 代谢组（看“在表达/真产物”）           （11.3、11.6）
+</code></pre>
+<blockquote>
+<p>⚠️ <code>*</code> CUE 的 ¹⁸O 法在干土有偏差（<strong>固碳争议3</strong>）——记录土壤干湿、慎比绝对值。</p>
+<p>🔑 一句话：<strong>宏基因组管"机制潜力"，固碳量必须配实测（</strong>框架3<strong>）。</strong> 这是整个课题最容易被审稿人攻击的点。</p>
+</blockquote>
+<hr />
+<h2 id="第-3-步-分析专挑统计坑避">第 3 步 · 分析（专挑统计坑避）</h2>
+<ol>
+<li><strong>组成型</strong>：CLR 或绝对定量，别拿相对丰度直接比（<strong>模型14</strong>、难点08.1）。</li>
+<li><strong>群落</strong>：α/β 多样性 + <strong>PERMANOVA</strong>（别只看 PCoA 分开了 → 模型12）。</li>
+<li><strong>差异基因</strong>：ALDEx2 / ANCOM-BC 类（内置 CLR）。</li>
+<li><strong>功能基因"成套 + 比值"读</strong>：算"碳降解(CAZy) : 养分获取(phoD/pstS/N获取)"比值（<strong>14.5</strong>）——别单基因下结论（⚠️养分判读卡1）。</li>
+<li><strong>关联建模</strong>：基因 ↔ CUE ↔ MAOC ↔ 产量 用 <strong>SEM / path analysis</strong>（14.5）。</li>
+<li><strong>relic DNA 警觉</strong>：施有机肥后死菌多，测到≠活跃（难点08.5）——差异大处考虑配 RNA。</li>
+<li><strong>多重检验校正</strong>（框架5）。</li>
+</ol>
+<hr />
+<h2 id="第-4-步-解读逐条守护栏">第 4 步 · 解读（逐条守护栏）</h2>
+<table>
+<thead>
+<tr>
+<th>你想说</th>
+<th>护栏拦一下</th>
+<th>该怎么说</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"配施提升了固碳功能"</td>
+<td>潜力≠活性≠通量（框架3）</td>
+<td>"改变了固碳相关基因<strong>潜力</strong>；MAOC（若实测）也升高"</td>
+</tr>
+<tr>
+<td>"配施<strong>导致</strong>固碳"</td>
+<td>相关≠因果（框架7）</td>
+<td>配施与 MAOC <strong>相关</strong>；因果需 ¹³C/操控</td>
+</tr>
+<tr>
+<td>"配施<strong>通过提高 CUE</strong>固碳"</td>
+<td>机制归因要分离（争议1/2）</td>
+<td>需 CUE 实测 + 坏死体 + 排除矿物保护等替代解释</td>
+</tr>
+<tr>
+<td>"这结论普遍适用"</td>
+<td>尺度（框架1）</td>
+<td>限本土壤/体系；跨体系需多点验证</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="第-5-步-下结论给每句话标可信度等级呼应-125-判读">第 5 步 · 下结论（给每句话标"可信度等级"，呼应 12.5 判读）</h2>
+<ul>
+<li>✅ <strong>能稳说</strong>：配施可重复地<strong>改变了碳/养分循环功能基因的潜力结构</strong>；（若实测）<strong>MAOC 与产量同时升高</strong>，且与计量平衡/CUE <strong>相关</strong>。</li>
+<li>⚠️ <strong>要谨慎</strong>："配施<strong>通过</strong> CUE/坏死体路径<strong>驱动</strong>固碳"——这是<strong>机制声明</strong>，需同位素 + 贡献分解证据撑（<strong>固碳争议2</strong>）。</li>
+<li>⛔ <strong>不能说</strong>：外推到"所有土壤/全球都该配施固碳"。</li>
+</ul>
+<hr />
+<h2 id="第-6-步-投稿前自审把-125-的10-问清单对自己用一遍">第 6 步 · 投稿前自审（把 <strong>12.5</strong> 的"10 问清单"对自己用一遍）</h2>
+<blockquote>
+<p><strong>你写论文前，先用判读别人论文的那把尺子量自己。</strong> 自己先挑出"潜力当通量、组成型没校正、只测表土、相关说成因果"——审稿人就挑不出大坑了。<strong>会判读别人 = 会自审自己。</strong></p>
+</blockquote>
+<hr />
+<h2 id="一张图全库如何在这一个课题里串起来">🧭 一张图：全库如何在这一个课题里串起来</h2>
+<pre><code>科学问题(框架5)
+   │ 拆假说、定证据天花板(框架1)
+   ▼
+设计(框架6 · 14.4 · 元数据15.1 · 避伪重复/控批次/分层采样)
+   │
+   ▼
+测什么(组学阶梯：宏基因组=潜力 + 通量端SOC组分/坏死体/CUE/¹³C + 活性端可选)
+   │
+   ▼
+分析(组成型模型14 · 排序模型12 · 成套比值14.5 · relic警觉08.5 · 多重校正框架5)
+   │
+   ▼
+解读(护栏：潜力≠通量框架3 · 相关≠因果框架7 · 机制归因争议1/2 · 尺度框架1)
+   │
+   ▼
+结论(分可信度等级) ──► 投稿前用&quot;10问清单&quot;自审(12.5)
+</code></pre>
+<blockquote>
+<p>✅ <strong>本篇要义</strong>：真正的科研能力，不是记住多少知识，而是把知识在<strong>一个真问题</strong>上<strong>串成一条带判断的决策链</strong>。这篇就是那条链的示范。<strong>换一个问题（N₂O 减排、盐碱改良、秸秆固碳…），把每一步的"选择 + 护栏"重走一遍即可。</strong> 这，就是这个库要交到你手里的最终能力。</p>
+</blockquote>
+<hr />
+<p>⬅️ 返回 <strong>模块14 总览</strong> ｜ 方案模板 → <strong><code>04-研究设计与分析方案.md</code></strong> ｜ 判读自审 → <strong><code>../12-自测与练习/05-论文判读实战.md</code></strong> ｜ 全领域思路 → <strong><code>../思路地图-灵魂导览.md</code></strong></p>
+</section><section class="chapter" id="chap-63">
 <h1 id="15-用好公开数据-与-meta-分析不一定要自己测序">15 · 用好公开数据 与 Meta 分析（不一定要自己测序）</h1>
 <blockquote>
 <p>💡 <strong>思路 &amp; 可能性</strong>：核心思路是"<strong>不必自己测，整合全世界已有的数据</strong>"。<strong>可能性上</strong>——这让没有湿实验室的人，也能做全球尺度、跨体系的大问题，是最被低估的一种能力。（你只想理解的话，看懂这个思路即可，脚本是给要动手时用的。）</p>
@@ -9968,7 +10153,7 @@ CUE              高                                  低
 </blockquote>
 <hr />
 <p>➡️ 从"去哪找、怎么下"开始：<strong><code>01-公开数据从哪来怎么下.md</code></strong></p>
-</section><section class="chapter" id="chap-63">
+</section><section class="chapter" id="chap-64">
 <h1 id="151-公开数据从哪来怎么下">15.1 · 公开数据从哪来、怎么下</h1>
 <blockquote>
 <p>这一篇是"找米下锅"——告诉你<strong>去哪找别人的数据、怎么下载、以及最大的坑（元数据）</strong>。</p>
@@ -10119,7 +10304,7 @@ fasterq-dump --split-files SRR1234567   # 得到双端 fastq
 <li>Terrestrial/Marine/Human MetagenomeDB（整理好的元数据库，按名检索）</li>
 </ul>
 <p>➡️ 下一篇：<strong><code>02-Meta分析方法.md</code></strong></p>
-</section><section class="chapter" id="chap-64">
+</section><section class="chapter" id="chap-65">
 <h1 id="152-meta-分析方法把很多研究合成一个普适结论">15.2 · Meta 分析方法（把很多研究合成一个普适结论）</h1>
 <blockquote>
 <p><strong>Meta 分析（meta-analysis）= 用统计方法把许多独立研究的结果定量合并，得到比单个研究更可靠、更普适的结论。</strong> <strong>14.6</strong> 里那些"全球平均效应"就是这么来的。
@@ -10238,7 +10423,7 @@ res_mod &lt;- rma(yi, vi, mods=~climate+soil_C, data=dat)  # 调节因子(Meta�
 <li>土地利用调节全球变化对土壤微生物影响(分层 Meta) · https://pubmed.ncbi.nlm.nih.gov/38772492/</li>
 </ul>
 <p>➡️ 下一篇：<strong><code>03-公开宏基因组数据再分析.md</code></strong></p>
-</section><section class="chapter" id="chap-65">
+</section><section class="chapter" id="chap-66">
 <h1 id="153-公开宏基因组数据再分析下原始序列统一重算">15.3 · 公开宏基因组数据再分析（下原始序列，统一重算）</h1>
 <blockquote>
 <p>这是"层次2"：不只用别人论文里的数字，而是<strong>把原始测序数据（reads）下载下来，用你自己统一的流程重新分析</strong>。
@@ -10337,7 +10522,7 @@ res_mod &lt;- rma(yi, vi, mods=~climate+soil_C, data=dat)  # 调节因子(Meta�
 <li>宏基因组数据生命周期：标准与最佳实践 · https://academic.oup.com/gigascience/article/6/8/gix047/3869082</li>
 </ul>
 <p>➡️ 下一篇：<strong><code>04-进阶数据再利用.md</code></strong></p>
-</section><section class="chapter" id="chap-66">
+</section><section class="chapter" id="chap-67">
 <h1 id="154-进阶数据再利用多组学-基因目录-mag-库-预测结构">15.4 · 进阶数据再利用（多组学 / 基因目录 / MAG 库 / 预测结构）</h1>
 <blockquote>
 <p>这是"层次3"：除了原始 reads，社区还积累了大量<strong>加工到更高层次的"进阶数据"</strong>——多组学、参考基因目录、海量 MAG、预测的蛋白结构、长期试验网络。学会用它们，能让你<strong>少算、算快、挖得更深</strong>。</p>
@@ -10439,7 +10624,7 @@ res_mod &lt;- rma(yi, vi, mods=~climate+soil_C, data=dat)  # 调节因子(Meta�
 <li>MGnify（分析结果 + 基因组目录）· https://www.ebi.ac.uk/metagenomics</li>
 </ul>
 <p>⬅️ 回到 <strong>模块15总览</strong> ｜ <strong>知识库总览</strong></p>
-</section><section class="chapter" id="chap-67">
+</section><section class="chapter" id="chap-68">
 <h1 id="155-宏基因组指标的提取与-meta-实例带数字走一遍">15.5 · 宏基因组指标的提取与 Meta 实例（带数字走一遍）</h1>
 <blockquote>
 <p>前面 15.2/15.3 讲了"方法框架"。但你做的是<strong>宏基因组</strong>——必须落到"<strong>到底哪些指标、怎么标准化、怎么算效应量、怎么合成</strong>"。这一篇用<strong>真实数字</strong>把整个过程走一遍，专治"道理懂了但不会动手"。</p>
@@ -10670,7 +10855,7 @@ forest(res); funnel(res)                            # 森林图 / 漏斗图
 <li>宏基因组基因丰度标准化方法比较 · https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5910605/</li>
 </ul>
 <p>⬅️ 回到 <strong>模块15总览</strong> ｜ 复习 Meta 方法 <strong>15.2</strong> ｜ 原始数据再分析 <strong>15.3</strong></p>
-</section><section class="chapter" id="chap-68">
+</section><section class="chapter" id="chap-69">
 <h1 id="156-候选公开数据集线索农田施肥养分循环固碳">15.6 · 候选公开数据集线索（农田·施肥·养分循环·固碳）</h1>
 <blockquote>
 <p>这是为你的方向（<strong>农田土壤 · 施肥/有机物 · 养分循环 · 固碳增产</strong>）整理的<strong>起步线索清单</strong>：可下载再分析的原始数据集、可整合的大资源、以及可做 Meta 分析的"数据金矿"论文。</p>
@@ -10828,7 +11013,7 @@ forest(res); funnel(res)                            # 森林图 / 漏斗图
 <li><strong>务必引用数据创造者与原始论文</strong>（学术伦理，<strong>15 模块红线</strong>）。</li>
 </ol>
 <p>⬅️ 回到 <strong>模块15总览</strong> ｜ 怎么提取/合成指标 <strong>15.5</strong></p>
-</section><section class="chapter" id="chap-69">
+</section><section class="chapter" id="chap-70">
 <h1 id="157-实战工具包-与-各候选数据集的具体用法">15.7 · 实战工具包 与 各候选数据集的具体用法</h1>
 <blockquote>
 <p>你说"全部"——所以我把前面所有方法，落成了一套<strong>可直接运行的脚本和模板</strong>（在 <strong><code>工具包/</code></strong>），并给出<strong>针对 </strong>15.6<strong> 各候选数据集的具体打法</strong>。核实编号后即可开跑。</p>
