@@ -709,7 +709,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 </ul>
 <blockquote>
 <p>🧭 <strong>只想"看懂思路、了解可能性"、暂不打算动手？</strong> 先读 <strong><code>思路地图 · 灵魂导览</code></strong>——一篇讲通全领域<strong>逻辑链、思维跃迁、可能性与判断力</strong>的导览，不含任何操作。配合 <code>01 第一性原理</code> + <code>03 思维框架</code>，就够你"想通"这个领域。</p>
-<p>📖 <strong>想离线 / 打印通读？</strong> 整本电子书（PDF 287 页 / HTML / Markdown）已生成在 <strong><code>合订本/</code></strong>。</p>
+<p>📖 <strong>想离线 / 打印通读？</strong> 整本电子书（PDF 294 页 / HTML / Markdown）已生成在 <strong><code>合订本/</code></strong>。</p>
 </blockquote>
 <hr />
 <h2 id="学习路线图建议顺序">🗺️ 学习路线图（建议顺序）</h2>
@@ -2409,7 +2409,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <p><strong>核心</strong>：没有对照和重复的"发现"不是科学发现。宏基因组还有几类<strong>特有的混淆来源</strong>必须主动防。</p>
 <p><strong>三个"复"</strong>：
 1. <strong>生物学重复（biological replicates）</strong>：≥3，缺了无法做统计、无法估变异（呼应原理 5）。注意区别于"技术重复"。
-2. <strong>对照（controls）</strong>：处理组 vs 对照组；还要有<strong>阴性对照/空白</strong>来发现试剂污染（kitome，提取试剂自带的微生物 DNA，对低生物量样本尤其致命）。
+2. <strong>对照（controls）</strong>：处理组 vs 对照组；还要有两把"标尺"——<strong>阴性对照/空白</strong>发现试剂污染（kitome，提取试剂自带的微生物 DNA，低生物量样本尤其致命）；<strong>阳性对照/标准菌群（mock community）</strong>用一管<strong>已知物种与比例</strong>的标准品走完整"提取→测序→分析"流程，<strong>校准方法偏差、验证流程能不能还原真相</strong>（best-practice 常被忽略的另一半）。
 3. <strong>可重复（reproducibility）</strong>：记录软件版本、参数、数据库版本；数据与流程公开（FAIR 原则），别人能复现。</p>
 <p><strong>宏基因组特有的坑</strong>（务必主动控制）：
 - <strong>批次效应（batch effect）</strong>：不同时间提取/测序/试剂批次会引入系统差异，可能<strong>完全盖过真实生物学差异</strong>。设计时把处理<strong>打散</strong>到各批次，别让"处理"和"批次"重合。
@@ -3295,6 +3295,21 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <td>Hi-C 邻近连接</td>
 <td>Hi-C proximity ligation</td>
 <td>用物理接触把碎片归到同一个细胞（10.2）</td>
+</tr>
+<tr>
+<td>MIxS / 标准化元数据</td>
+<td>Minimum Information about any (x) Sequence</td>
+<td>GSC 国际标准：测序数据至少该附带的背景信息（含土壤环境包：经纬度/深度/pH/土地利用…）</td>
+</tr>
+<tr>
+<td>阳性对照 / 标准菌群</td>
+<td>Mock community</td>
+<td>已知物种与比例的标准品，走全流程以校准偏差、验证准确性（与阴性对照互补）</td>
+</tr>
+<tr>
+<td>环境本体</td>
+<td>ENVO (Environment Ontology)</td>
+<td>用统一受控词汇描述"什么环境"（env_broad/local/medium）</td>
 </tr>
 </tbody>
 </table>
@@ -5457,6 +5472,8 @@ Simpson(q=2) 主要看“优势种”格局    几乎忽视稀有种
 ❌ 忘了去宿主                 → ✅ 否则&quot;土里全是植物基因&quot;
 ❌ 不控批次效应              → ✅ 处理打散到各批次(框架6)
 ❌ 把&quot;测到的DNA&quot;当活菌群落    → ✅ 含死菌relic DNA(~40%)，活性看RNA/qSIP(图解08.5)
+❌ 只有阴性对照、没阳性对照    → ✅ 加mock标准菌群校准偏差(框架6)
+❌ 数据不记标准元数据         → ✅ 按MIxS记录(经纬/深度/pH/施肥…)才能复用与合并(15.1)
 </code></pre>
 <hr />
 <blockquote>
@@ -9278,6 +9295,13 @@ fasterq-dump --split-files SRR1234567   # 得到双端 fastq
 2. <strong>统一术语和单位</strong>：把不同研究的字段映射到统一标准。
 3. <strong>记录来源</strong>：每条数据记下 accession、版本、下载日期（可复现，<strong>框架6</strong>）。
 4. <strong>善用"已整理"的元数据库</strong>：如 TerrestrialMetagenomeDB（陆地/土壤）、MarineMetagenomeDB、HumanMetagenomeDB 等，它们<strong>人工整理标准化了元数据</strong>，能省大量功夫。</p>
+<blockquote>
+<p>🌐 <strong>认准国际标准：MIxS（最小信息标准）</strong>。GSC（基因组标准联盟）的 <strong>MIxS / MIMARKS</strong> 规定了"一条测序数据<strong>至少该附带哪些背景信息</strong>"，并有专门的<strong>土壤环境包（soil environmental package）</strong>：
+- <strong>地点</strong>：经纬度、海拔、采样深度；<strong>环境本体</strong>（ENVO 的 env_broad_scale / env_local_scale / env_medium，用统一词汇描述"什么环境"）；
+- <strong>理化</strong>：pH、土壤类型/质地、温度、含水量、总碳氮；
+- <strong>管理</strong>：土地利用、施肥 / 有机物添加、采样日期；<strong>测序</strong>：平台、文库、引物等。</p>
+<p>🔑 为什么这对你（meta 分析）是命根子：<strong>两套数据能不能合并、你能不能按 pH/施肥筛样本，全看这些字段在不在、合不合标准。</strong> 自己产数据时按 MIxS 记录 = 让它将来能被检索、被复用（FAIR）；用别人数据时，先量一量它的元数据离 MIxS 有多远——缺太多的，往往只能忍痛弃用。</p>
+</blockquote>
 <hr />
 <h2 id="下数据前的检查清单">✅ 下数据前的检查清单</h2>
 <ul>
