@@ -53,7 +53,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
   <h1>🦠 土壤宏基因组学</h1>
   <div class="sub">小白系统学习库 · 完整合订本</div>
   <div class="sub">第一性原理 · 20 个必学模型 · 7 个思维框架 · 10 个案例 · 实操教程 · 难点图解 · 前沿与多组学</div>
-  <div class="sub" style="margin-top:18px;font-size:.9em;">共 67 章 · 自动合并生成 · 用浏览器「打印 → 另存为 PDF」即得电子书</div>
+  <div class="sub" style="margin-top:18px;font-size:.9em;">共 68 章 · 自动合并生成 · 用浏览器「打印 → 另存为 PDF」即得电子书</div>
 </div>
 <div class="tocbox"><h2 style="margin-top:0;border:none;">📑 目录</h2>
 <ul class='toc'><li><a href="#chap-1"><b>🦠 土壤宏基因组学 · 小白系统学习库</b></a>
@@ -669,14 +669,26 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-60"><b>15 · 用好公开数据 与 Meta 分析（不一定要自己测序）</b></a>
+<li><a href="#chap-60"><b>14.7 · 固碳前沿：学界还在吵什么（5 个未定之争）</b></a>
+<ul>
+<li><a href="#引子为什么要专门学争议">引子：为什么要专门学&quot;争议&quot;</a></li>
+<li><a href="#争议-1-持久性是分子顽固还是生态系统属性最根本的范式之争">争议 1 · 持久性：是&quot;分子顽固&quot;还是&quot;生态系统属性&quot;？（最根本的范式之争）</a></li>
+<li><a href="#争议-2-微生物碳泵坏死体被高估了吗坏死体-vs-木质素">争议 2 · 微生物碳泵：坏死体被高估了吗？（坏死体 vs 木质素）</a></li>
+<li><a href="#争议-3-cue测不准还是根本不是好的固碳预测器">争议 3 · CUE：测不准，还是根本不是好的固碳预测器？</a></li>
+<li><a href="#争议-4-maom-有没有天花板饱和之争">争议 4 · MAOM 有没有&quot;天花板&quot;？（饱和之争）</a></li>
+<li><a href="#争议-5-深层土壤碳-与-全球潜力估算的不确定">争议 5 · 深层土壤碳 与 全球潜力估算的不确定</a></li>
+<li><a href="#怎么用这些争议判断力的升华">🧭 怎么用这些争议（判断力的升华）</a></li>
+<li><a href="#延伸阅读权威争议双方都列">📚 延伸阅读（权威，争议双方都列）</a></li>
+</ul>
+</li>
+<li><a href="#chap-61"><b>15 · 用好公开数据 与 Meta 分析（不一定要自己测序）</b></a>
 <ul>
 <li><a href="#一三个层次的数据再利用先分清你要哪种">一、三个层次的数据再利用（先分清你要哪种）</a></li>
 <li><a href="#二本模块内容">二、本模块内容</a></li>
 <li><a href="#三为什么这是事半功倍的能力">三、为什么这是&quot;事半功倍&quot;的能力</a></li>
 </ul>
 </li>
-<li><a href="#chap-61"><b>15.1 · 公开数据从哪来、怎么下</b></a>
+<li><a href="#chap-62"><b>15.1 · 公开数据从哪来、怎么下</b></a>
 <ul>
 <li><a href="#一原始测序数据仓库下-reads-的地方">一、原始测序数据仓库（下 reads 的地方）</a></li>
 <li><a href="#二加工好的高级数据省去自己算">二、加工好的&quot;高级&quot;数据（省去自己算）</a></li>
@@ -687,7 +699,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-62"><b>15.2 · Meta 分析方法（把很多研究合成一个普适结论）</b></a>
+<li><a href="#chap-63"><b>15.2 · Meta 分析方法（把很多研究合成一个普适结论）</b></a>
 <ul>
 <li><a href="#一它解决什么问题为什么需要它">一、它解决什么问题（为什么需要它）</a></li>
 <li><a href="#二标准流程prisma-框架照着走">二、标准流程（PRISMA 框架，照着走）</a></li>
@@ -698,7 +710,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-63"><b>15.3 · 公开宏基因组数据再分析（下原始序列，统一重算）</b></a>
+<li><a href="#chap-64"><b>15.3 · 公开宏基因组数据再分析（下原始序列，统一重算）</b></a>
 <ul>
 <li><a href="#一什么时候该做再分析而不是-meta-分析">一、什么时候该做&quot;再分析&quot;（而不是 Meta 分析）</a></li>
 <li><a href="#二标准流程">二、标准流程</a></li>
@@ -709,7 +721,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-64"><b>15.4 · 进阶数据再利用（多组学 / 基因目录 / MAG 库 / 预测结构）</b></a>
+<li><a href="#chap-65"><b>15.4 · 进阶数据再利用（多组学 / 基因目录 / MAG 库 / 预测结构）</b></a>
 <ul>
 <li><a href="#一有哪些进阶数据可借">一、有哪些&quot;进阶数据&quot;可借</a></li>
 <li><a href="#二几种高价值玩法">二、几种高价值玩法</a></li>
@@ -719,7 +731,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-65"><b>15.5 · 宏基因组指标的提取与 Meta 实例（带数字走一遍）</b></a>
+<li><a href="#chap-66"><b>15.5 · 宏基因组指标的提取与 Meta 实例（带数字走一遍）</b></a>
 <ul>
 <li><a href="#一先搞清能拿来做-meta-整合的宏基因组指标有哪些">一、先搞清：能拿来做 Meta / 整合的&quot;宏基因组指标&quot;有哪些</a></li>
 <li><a href="#二关键难点宏基因组指标的单位五花八门必须先统一理解">二、关键难点：宏基因组指标的&quot;单位&quot;五花八门（必须先统一理解）</a></li>
@@ -731,7 +743,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#延伸阅读">📚 延伸阅读</a></li>
 </ul>
 </li>
-<li><a href="#chap-66"><b>15.6 · 候选公开数据集线索（农田·施肥·养分循环·固碳）</b></a>
+<li><a href="#chap-67"><b>15.6 · 候选公开数据集线索（农田·施肥·养分循环·固碳）</b></a>
 <ul>
 <li><a href="#一可下载再分析的原始数据集层次2见153">一、可下载再分析的原始数据集（层次2，见15.3）</a></li>
 <li><a href="#二可整合的大型资源层次23做全球跨体系">二、可整合的大型资源（层次2/3，做全球/跨体系）</a></li>
@@ -741,7 +753,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 <li><a href="#三条纪律再强调">⚠️ 三条纪律（再强调）</a></li>
 </ul>
 </li>
-<li><a href="#chap-67"><b>15.7 · 实战工具包 与 各候选数据集的具体用法</b></a>
+<li><a href="#chap-68"><b>15.7 · 实战工具包 与 各候选数据集的具体用法</b></a>
 <ul>
 <li><a href="#一工具包里有什么">一、工具包里有什么</a></li>
 <li><a href="#二按候选数据集对号入座核实编号后">二、按候选数据集对号入座（核实编号后）</a></li>
@@ -763,7 +775,7 @@ hr{ border:none; border-top:1px solid var(--line); margin:2em 0; }
 </ul>
 <blockquote>
 <p>🧭 <strong>只想"看懂思路、了解可能性"、暂不打算动手？</strong> 先读 <strong><code>思路地图 · 灵魂导览</code></strong>——一篇讲通全领域<strong>逻辑链、思维跃迁、可能性与判断力</strong>的导览，不含任何操作。配合 <code>01 第一性原理</code> + <code>03 思维框架</code>，就够你"想通"这个领域。</p>
-<p>📖 <strong>想离线 / 打印通读？</strong> 整本电子书（PDF 310 页 / HTML / Markdown）已生成在 <strong><code>合订本/</code></strong>。</p>
+<p>📖 <strong>想离线 / 打印通读？</strong> 整本电子书（PDF 316 页 / HTML / Markdown）已生成在 <strong><code>合订本/</code></strong>。</p>
 </blockquote>
 <hr />
 <h2 id="学习路线图建议顺序">🗺️ 学习路线图（建议顺序）</h2>
@@ -8612,6 +8624,16 @@ D. 材料学</p>
 <td>用 <strong>C:N:P 化学计量</strong>统一理解<strong>固碳与增产</strong>：内稳态/CUE、酶向量分析诊断限制、基因指纹</td>
 <td>农田固碳增产×化学计量方向</td>
 </tr>
+<tr>
+<td><strong><code>06-全球视角与跨体系综合.md</code></strong></td>
+<td>全球尺度规律、跨体系综合、整合公开数据</td>
+<td>把单点放进全球背景</td>
+</tr>
+<tr>
+<td><strong><code>07-固碳前沿争议.md</code></strong> ⭐</td>
+<td>固碳<strong>还没定论的 5 场争议</strong>（持久性范式 / 坏死体 vs 木质素 / CUE 测量 / MAOM 饱和 / 深层与全球）</td>
+<td>知道"哪里没定论"= 高级判断力</td>
+</tr>
 </tbody>
 </table>
 <hr />
@@ -9656,6 +9678,84 @@ CUE              高                                  低
 </ul>
 <p>⬅️ 回到 <strong>专题总览</strong> ｜ 学怎么用公开数据做综合 → <strong>模块15</strong></p>
 </section><section class="chapter" id="chap-60">
+<h1 id="147-固碳前沿学界还在吵什么5-个未定之争">14.7 · 固碳前沿：学界还在吵什么（5 个未定之争）</h1>
+<blockquote>
+<p>💡 <strong>思路 &amp; 可能性</strong>：前面 6 篇讲的是固碳的<strong>已知共识</strong>。这一篇讲<strong>还没定论的</strong>——固碳研究最前沿的几场争论。</p>
+<p><strong>读懂"哪里还没定论"，是判断力的最高级</strong>：你会发现，很多被当成"结论"引用的东西，其实只是<strong>某一派的观点</strong>。而争议处，恰恰是<strong>选题的机会</strong>。本篇只讲思路、争议双方、对你的意义，不落操作。</p>
+</blockquote>
+<hr />
+<h2 id="引子为什么要专门学争议">引子：为什么要专门学"争议"</h2>
+<p>教科书给你"定论"，前沿给你"争议"。知道一件事<strong>还在吵</strong>，你就有两个收获：① 不会把<strong>一派之言</strong>当铁律去套自己的数据；② 找到<strong>研究空间</strong>——没定论的地方，才有你能贡献的地方。</p>
+<blockquote>
+<p>🔑 下面 5 场争议，每一场我都给你"<strong>正方 / 反方 / 现状 / 对你</strong>"。</p>
+</blockquote>
+<hr />
+<h2 id="争议-1-持久性是分子顽固还是生态系统属性最根本的范式之争">争议 1 · 持久性：是"分子顽固"还是"生态系统属性"？（最根本的范式之争）</h2>
+<ul>
+<li><strong>老范式</strong>：有机碳能存住，是因为<strong>分子本身难降解</strong>（recalcitrance）——木质素顽固、能形成稳定"腐殖质"。</li>
+<li><strong>新范式</strong>（Schmidt et al. 2011 <em>Nature</em>；Lehmann &amp; Kleber 2015 <em>Nature</em>）：<strong>分子结构本身并不决定稳定性</strong>；<strong>持久性是一种"生态系统属性"</strong>——碳能不能存住，取决于<strong>环境</strong>（矿物吸附保护、缺氧、缺水、物理隔离），而非分子天生顽固。"土壤连续体模型"甚至认为<strong>没有"稳定的腐殖质"这种东西</strong>，只有动态平衡。</li>
+<li><strong>现状</strong>：新范式已是主流，但"腐殖质""惰性碳"等老概念仍在大量沿用——<strong>两种思维并存</strong>。</li>
+<li>🔑 <strong>对你</strong>：看到"某物质因为<strong>化学顽固</strong>而固碳"要警惕——现代观点是<strong>保护条件（矿物、团聚体、缺氧）</strong>才是关键。固碳策略应着眼"<strong>创造保护条件</strong>"，而非"加更难降解的料"。</li>
+</ul>
+<hr />
+<h2 id="争议-2-微生物碳泵坏死体被高估了吗坏死体-vs-木质素">争议 2 · 微生物碳泵：坏死体被高估了吗？（坏死体 vs 木质素）</h2>
+<ul>
+<li><strong>正方（坏死体中心 / MCP）</strong>：稳定碳<strong>大半是微生物坏死体</strong>（meta 分析：农田约 51%、草地 47%、森林表土仅 35%，真菌＞细菌）；固碳关键是<strong>养高效微生物</strong>（<strong>14.3</strong>）。</li>
+<li><strong>反方 / 批评</strong>：有综述直言"微生物中心范式<strong>被接受得缺乏批判审视</strong>"；<strong>植物源（木质素等）贡献同样很大</strong>，且坏死体本身也会被分解（富氮的 MAOM 反而<strong>快速分解</strong>）。两者更可能是<strong>因情境而异（context-dependent）</strong>。</li>
+<li><strong>现状</strong>：坏死体很重要是共识；但"坏死体<strong>主导</strong>、植物源次要"<strong>未定</strong>——深层、不同生态系统比例差异大。</li>
+<li>🔑 <strong>对你</strong>：别把"坏死体占 50%"当普适铁律（那是<strong>估算 + 均值</strong>，森林表土才 35%，还依赖<strong>换算系数</strong>）。固碳要<strong>坏死体路径 + 植物源稳定化</strong>两手抓。</li>
+</ul>
+<hr />
+<h2 id="争议-3-cue测不准还是根本不是好的固碳预测器">争议 3 · CUE：测不准，还是根本不是好的固碳预测器？</h2>
+<ul>
+<li><strong>共识</strong>：高 CUE → 更多碳变身体 → 利固碳（库里 <strong>14.5</strong> 的逻辑）。</li>
+<li><strong>争议</strong>：① <strong>测不准</strong>——主流的 <strong>¹⁸O-H₂O 法</strong>在<strong>干土</strong>上因"Birch 效应"（干土复湿活性暴发）<strong>高估生长达 250%、高估呼吸达 500%、低估 CUE 达 40%</strong>；不同方法测的 CUE 能差一倍（&lt;0.4 vs &gt;0.6）。② <strong>预测力存疑</strong>——CUE 与固碳的关系是否稳健、能否跨尺度成立，有分歧。</li>
+<li><strong>现状</strong>：CUE 是核心概念，但<strong>数值高度依赖测定方法</strong>；蒸气平衡等改进法在补救。</li>
+<li>🔑 <strong>对你</strong>：看到"处理 X 提高了 CUE、所以固碳"，先追问<strong>用什么方法测的 CUE、土壤干湿状态</strong>；<strong>CUE 绝对值跨研究不可直接比</strong>。</li>
+</ul>
+<hr />
+<h2 id="争议-4-maom-有没有天花板饱和之争">争议 4 · MAOM 有没有"天花板"？（饱和之争）</h2>
+<ul>
+<li><strong>正方（饱和假说）</strong>：矿物表面有限 → 矿物结合态碳（MAOC）有<strong>上限</strong>；越接近饱和，新增碳越<strong>存不住</strong>。这对"一块地还能固多少碳"的评估至关重要。</li>
+<li><strong>反方</strong>：饱和<strong>概念本身模糊、模型多变</strong>；最新数据显示 MAOC 随总 SOC <strong>近线性增加到很高水平（~13% SOC）</strong>，观察到的"饱和"其实是<strong>动态稳态</strong>而非真上限；且并非所有 MAOM 都稳定（富氮的会快速分解）。</li>
+<li><strong>现状</strong>：有没有普适"天花板"、如何定义饱和——<strong>未定</strong>（正反双方还在期刊上互相写 letter）。</li>
+<li>🔑 <strong>对你</strong>：评估"这块地还能固多少碳"时，"<strong>饱和上限</strong>"是个<strong>有争议的假设</strong>，别当确定数字用；不同方法估出的"固碳潜力"差距可能很大。</li>
+</ul>
+<hr />
+<h2 id="争议-5-深层土壤碳-与-全球潜力估算的不确定">争议 5 · 深层土壤碳 与 全球潜力估算的不确定</h2>
+<ul>
+<li><strong>深层碳（&gt;30 cm）</strong>占总量大头，却研究少、机制不同（更受矿物/缺氧控制，而非根系输入）——很多结论建立在表土，深层是<strong>黑箱</strong>。</li>
+<li><strong>全球固碳潜力</strong>的估算，正因为上面这些争议（饱和有没有、坏死体占多少、CUE 怎么测）而<strong>区间极大</strong>。</li>
+<li>🔑 <strong>对你</strong>：看到"某措施全球能固 X 亿吨碳"，要问它<strong>假设了哪一派</strong>、<strong>算到多深</strong>（呼应固碳判读卡的"只测表土"坑）。</li>
+</ul>
+<hr />
+<h2 id="怎么用这些争议判断力的升华">🧭 怎么用这些争议（判断力的升华）</h2>
+<pre><code>读任何固碳论文/报告 → 先识别它：
+   ① 站哪一派？（分子顽固 vs 生态系统属性；坏死体主导 vs 植物源并重）
+   ② 用了哪个有争议的假设？（饱和上限？某种 CUE 测法？坏死体换算系数？）
+   ③ 算到多深、什么尺度？
+→ 然后才决定：它的结论，我信几分
+</code></pre>
+<blockquote>
+<p>🔑 <strong>一句话</strong>：<strong>知道一件事"还没定论"，是比知道"定论"更高级的认知。</strong> 它让你不被任何一派的"确定语气"带走，也让你看见——<strong>争议的裂缝里，正是研究的入口。</strong></p>
+</blockquote>
+<hr />
+<h2 id="延伸阅读权威争议双方都列">📚 延伸阅读（权威，争议双方都列）</h2>
+<p><strong>范式（必读两篇 Nature）</strong>
+- Persistence of soil organic matter as an ecosystem property · <em>Nature</em> 2011 · https://pubmed.ncbi.nlm.nih.gov/21979045/
+- The contentious nature of soil organic matter（土壤连续体模型）· <em>Nature</em> 2015 · https://www.nature.com/articles/nature16069</p>
+<p><strong>坏死体 vs 植物源</strong>
+- 微生物坏死体的批判性综述 · https://www.sciencedirect.com/science/article/pii/S2772826926000398
+- 坏死体与木质素的分异累积 · <em>Nat. Commun.</em> 2018 · https://www.nature.com/articles/s41467-018-05891-1</p>
+<p><strong>CUE 测量分歧</strong>
+- ¹⁸O 法在干土上的偏差（Birch 效应）· <em>Elementa</em> · https://online.ucpress.edu/elementa/article/8/1/069/112326
+- CUE 方法对比与解读 · <em>Soil Biol. Biochem.</em> · https://www.sciencedirect.com/science/article/pii/S003807171830347X</p>
+<p><strong>MAOM 饱和之争</strong>
+- 需更新 MAOM 饱和概念 · https://www.sciencedirect.com/science/article/abs/pii/S003807172400364X
+- "稳态而非饱和"观点 · https://www.tandfonline.com/doi/full/10.1080/00380768.2025.2595442</p>
+<hr />
+<p>⬅️ 返回 <strong>模块14 总览</strong> ｜ 固碳机制（共识篇）→ <strong><code>03-有机碳固存与激发效应.md</code></strong> ｜ 固碳论文判读 → <strong><code>../12-自测与练习/07-论文判读实战集-固碳.md</code></strong></p>
+</section><section class="chapter" id="chap-61">
 <h1 id="15-用好公开数据-与-meta-分析不一定要自己测序">15 · 用好公开数据 与 Meta 分析（不一定要自己测序）</h1>
 <blockquote>
 <p>💡 <strong>思路 &amp; 可能性</strong>：核心思路是"<strong>不必自己测，整合全世界已有的数据</strong>"。<strong>可能性上</strong>——这让没有湿实验室的人，也能做全球尺度、跨体系的大问题，是最被低估的一种能力。（你只想理解的话，看懂这个思路即可，脚本是给要动手时用的。）</p>
@@ -9758,7 +9858,7 @@ CUE              高                                  低
 </blockquote>
 <hr />
 <p>➡️ 从"去哪找、怎么下"开始：<strong><code>01-公开数据从哪来怎么下.md</code></strong></p>
-</section><section class="chapter" id="chap-61">
+</section><section class="chapter" id="chap-62">
 <h1 id="151-公开数据从哪来怎么下">15.1 · 公开数据从哪来、怎么下</h1>
 <blockquote>
 <p>这一篇是"找米下锅"——告诉你<strong>去哪找别人的数据、怎么下载、以及最大的坑（元数据）</strong>。</p>
@@ -9909,7 +10009,7 @@ fasterq-dump --split-files SRR1234567   # 得到双端 fastq
 <li>Terrestrial/Marine/Human MetagenomeDB（整理好的元数据库，按名检索）</li>
 </ul>
 <p>➡️ 下一篇：<strong><code>02-Meta分析方法.md</code></strong></p>
-</section><section class="chapter" id="chap-62">
+</section><section class="chapter" id="chap-63">
 <h1 id="152-meta-分析方法把很多研究合成一个普适结论">15.2 · Meta 分析方法（把很多研究合成一个普适结论）</h1>
 <blockquote>
 <p><strong>Meta 分析（meta-analysis）= 用统计方法把许多独立研究的结果定量合并，得到比单个研究更可靠、更普适的结论。</strong> <strong>14.6</strong> 里那些"全球平均效应"就是这么来的。
@@ -10028,7 +10128,7 @@ res_mod &lt;- rma(yi, vi, mods=~climate+soil_C, data=dat)  # 调节因子(Meta�
 <li>土地利用调节全球变化对土壤微生物影响(分层 Meta) · https://pubmed.ncbi.nlm.nih.gov/38772492/</li>
 </ul>
 <p>➡️ 下一篇：<strong><code>03-公开宏基因组数据再分析.md</code></strong></p>
-</section><section class="chapter" id="chap-63">
+</section><section class="chapter" id="chap-64">
 <h1 id="153-公开宏基因组数据再分析下原始序列统一重算">15.3 · 公开宏基因组数据再分析（下原始序列，统一重算）</h1>
 <blockquote>
 <p>这是"层次2"：不只用别人论文里的数字，而是<strong>把原始测序数据（reads）下载下来，用你自己统一的流程重新分析</strong>。
@@ -10127,7 +10227,7 @@ res_mod &lt;- rma(yi, vi, mods=~climate+soil_C, data=dat)  # 调节因子(Meta�
 <li>宏基因组数据生命周期：标准与最佳实践 · https://academic.oup.com/gigascience/article/6/8/gix047/3869082</li>
 </ul>
 <p>➡️ 下一篇：<strong><code>04-进阶数据再利用.md</code></strong></p>
-</section><section class="chapter" id="chap-64">
+</section><section class="chapter" id="chap-65">
 <h1 id="154-进阶数据再利用多组学-基因目录-mag-库-预测结构">15.4 · 进阶数据再利用（多组学 / 基因目录 / MAG 库 / 预测结构）</h1>
 <blockquote>
 <p>这是"层次3"：除了原始 reads，社区还积累了大量<strong>加工到更高层次的"进阶数据"</strong>——多组学、参考基因目录、海量 MAG、预测的蛋白结构、长期试验网络。学会用它们，能让你<strong>少算、算快、挖得更深</strong>。</p>
@@ -10229,7 +10329,7 @@ res_mod &lt;- rma(yi, vi, mods=~climate+soil_C, data=dat)  # 调节因子(Meta�
 <li>MGnify（分析结果 + 基因组目录）· https://www.ebi.ac.uk/metagenomics</li>
 </ul>
 <p>⬅️ 回到 <strong>模块15总览</strong> ｜ <strong>知识库总览</strong></p>
-</section><section class="chapter" id="chap-65">
+</section><section class="chapter" id="chap-66">
 <h1 id="155-宏基因组指标的提取与-meta-实例带数字走一遍">15.5 · 宏基因组指标的提取与 Meta 实例（带数字走一遍）</h1>
 <blockquote>
 <p>前面 15.2/15.3 讲了"方法框架"。但你做的是<strong>宏基因组</strong>——必须落到"<strong>到底哪些指标、怎么标准化、怎么算效应量、怎么合成</strong>"。这一篇用<strong>真实数字</strong>把整个过程走一遍，专治"道理懂了但不会动手"。</p>
@@ -10460,7 +10560,7 @@ forest(res); funnel(res)                            # 森林图 / 漏斗图
 <li>宏基因组基因丰度标准化方法比较 · https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5910605/</li>
 </ul>
 <p>⬅️ 回到 <strong>模块15总览</strong> ｜ 复习 Meta 方法 <strong>15.2</strong> ｜ 原始数据再分析 <strong>15.3</strong></p>
-</section><section class="chapter" id="chap-66">
+</section><section class="chapter" id="chap-67">
 <h1 id="156-候选公开数据集线索农田施肥养分循环固碳">15.6 · 候选公开数据集线索（农田·施肥·养分循环·固碳）</h1>
 <blockquote>
 <p>这是为你的方向（<strong>农田土壤 · 施肥/有机物 · 养分循环 · 固碳增产</strong>）整理的<strong>起步线索清单</strong>：可下载再分析的原始数据集、可整合的大资源、以及可做 Meta 分析的"数据金矿"论文。</p>
@@ -10618,7 +10718,7 @@ forest(res); funnel(res)                            # 森林图 / 漏斗图
 <li><strong>务必引用数据创造者与原始论文</strong>（学术伦理，<strong>15 模块红线</strong>）。</li>
 </ol>
 <p>⬅️ 回到 <strong>模块15总览</strong> ｜ 怎么提取/合成指标 <strong>15.5</strong></p>
-</section><section class="chapter" id="chap-67">
+</section><section class="chapter" id="chap-68">
 <h1 id="157-实战工具包-与-各候选数据集的具体用法">15.7 · 实战工具包 与 各候选数据集的具体用法</h1>
 <blockquote>
 <p>你说"全部"——所以我把前面所有方法，落成了一套<strong>可直接运行的脚本和模板</strong>（在 <strong><code>工具包/</code></strong>），并给出<strong>针对 </strong>15.6<strong> 各候选数据集的具体打法</strong>。核实编号后即可开跑。</p>
